@@ -1,0 +1,2247 @@
+[
+  {
+    "id": "lap_01",
+    "name": "Lenovo Legion Pro 5 Gen 9",
+    "brand": "Lenovo",
+    "category": "laptop",
+    "price": 109999,
+    "rating": 4.7,
+    "rating_count": 840,
+    "image_url": "https://images.unsplash.com/photo-1603302576837-37561b2e2302?auto=format&fit=crop&w=800&q=80",
+    "description": "High-performance gaming and AI workstation powered by AMD Ryzen 7 7745HX and NVIDIA GeForce RTX 4070 GPU with 140W TGP.",
+    "features": [
+      "NVIDIA GeForce RTX 4070 8GB GDDR6",
+      "AMD Ryzen 7 7745HX (8 Cores, 16 Threads, up to 5.1GHz)",
+      "32GB DDR5 5200MHz RAM",
+      "1TB PCIe Gen4 NVMe SSD",
+      "16-inch WQXGA 240Hz 500 nits 100% sRGB Display",
+      "Legion Coldfront 5.0 Thermal Cooling System"
+    ],
+    "specifications": {
+      "Processor": "AMD Ryzen 7 7745HX",
+      "Graphics": "NVIDIA RTX 4070 (140W TGP)",
+      "Memory": "32GB DDR5",
+      "Storage": "1TB NVMe Gen4 SSD",
+      "Display": "16\" 2.5K 240Hz IPS",
+      "Battery": "80Whr (Up to 6 hours)",
+      "Weight": "2.5 kg"
+    },
+    "best_for": [
+      "Gaming",
+      "Machine Learning",
+      "Deep Learning Model Training",
+      "3D Rendering",
+      "Software Development"
+    ]
+  },
+  {
+    "id": "lap_02",
+    "name": "Apple MacBook Pro 14 M4",
+    "brand": "Apple",
+    "category": "laptop",
+    "price": 169900,
+    "rating": 4.9,
+    "rating_count": 1250,
+    "image_url": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=800&q=80",
+    "description": "Next-generation Apple silicon M4 chip delivering extraordinary speed, unified memory architecture, and class-leading 24-hour battery life.",
+    "features": [
+      "Apple M4 chip with 10-core CPU and 10-core GPU",
+      "16-core Neural Engine for on-device AI workflows",
+      "24GB Unified High-Bandwidth Memory",
+      "512GB Ultra-fast NVMe Storage",
+      "14.2-inch Liquid Retina XDR 120Hz ProMotion Display (1600 nits peak)",
+      "Up to 24 hours battery life"
+    ],
+    "specifications": {
+      "Processor": "Apple M4 (10-core CPU)",
+      "Graphics": "10-core integrated GPU",
+      "Memory": "24GB Unified Memory",
+      "Storage": "512GB SSD",
+      "Display": "14.2\" Liquid Retina XDR",
+      "Battery": "70Whr (Up to 24 hours)",
+      "Weight": "1.55 kg"
+    },
+    "best_for": [
+      "Full-stack Programming",
+      "Mobile App Development",
+      "Data Science",
+      "Content Creation",
+      "Travel and Remote Work"
+    ]
+  },
+  {
+    "id": "lap_03",
+    "name": "ASUS ROG Zephyrus G16 (2024)",
+    "brand": "ASUS",
+    "category": "laptop",
+    "price": 149990,
+    "rating": 4.8,
+    "rating_count": 620,
+    "image_url": "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?auto=format&fit=crop&w=800&q=80",
+    "description": "Ultra-slim CNC aluminum gaming and creator chassis with stunning ROG Nebula 2.5K OLED 240Hz screen and Intel Core Ultra 9 with AI NPU.",
+    "features": [
+      "Intel Core Ultra 9 185H processor with Intel AI Boost NPU",
+      "NVIDIA GeForce RTX 4060 8GB GDDR6",
+      "16GB LPDDR5X 7467MHz RAM",
+      "1TB PCIe 4.0 NVMe M.2 SSD",
+      "16-inch 2.5K 240Hz 0.2ms ROG Nebula OLED Display",
+      "Premium 1.49cm thin CNC Aluminum unibody"
+    ],
+    "specifications": {
+      "Processor": "Intel Core Ultra 9 185H",
+      "Graphics": "NVIDIA RTX 4060",
+      "Memory": "16GB LPDDR5X",
+      "Storage": "1TB SSD",
+      "Display": "16\" 2.5K 240Hz OLED",
+      "Battery": "90Whr (Up to 9 hours)",
+      "Weight": "1.85 kg"
+    },
+    "best_for": [
+      "Competitive Gaming",
+      "Video Editing",
+      "Generative AI Prototyping",
+      "Graphic Design"
+    ]
+  },
+  {
+    "id": "lap_04",
+    "name": "Dell XPS 14 (9440)",
+    "brand": "Dell",
+    "category": "laptop",
+    "price": 174990,
+    "rating": 4.6,
+    "rating_count": 310,
+    "image_url": "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?auto=format&fit=crop&w=800&q=80",
+    "description": "Iconic futuristic design with seamless glass touchpad, touch function row, and dedicated RTX graphics in a compact 14-inch footprint.",
+    "features": [
+      "Intel Core Ultra 7 155H processor with AI NPU",
+      "NVIDIA GeForce RTX 4050 6GB GDDR6",
+      "32GB LPDDR5x RAM",
+      "1TB M.2 PCIe NVMe SSD",
+      "14.5-inch 3.2K (3200 x 2000) OLED Touch Display 120Hz",
+      "Gorilla Glass 3 seamless haptic trackpad"
+    ],
+    "specifications": {
+      "Processor": "Intel Core Ultra 7 155H",
+      "Graphics": "NVIDIA RTX 4050",
+      "Memory": "32GB LPDDR5x",
+      "Storage": "1TB SSD",
+      "Display": "14.5\" 3.2K 120Hz OLED Touch",
+      "Battery": "69.5Whr (Up to 10 hours)",
+      "Weight": "1.68 kg"
+    },
+    "best_for": [
+      "Executive Workflow",
+      "UI/UX Design",
+      "Software Engineering",
+      "Business and Presentations"
+    ]
+  },
+  {
+    "id": "lap_05",
+    "name": "Acer Swift Go 14 AI",
+    "brand": "Acer",
+    "category": "laptop",
+    "price": 64999,
+    "rating": 4.5,
+    "rating_count": 940,
+    "image_url": "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?auto=format&fit=crop&w=800&q=80",
+    "description": "Affordable AI-ready ultrabook featuring Intel Core Ultra 5, 2.8K 90Hz OLED screen, and lightweight portability for students and coders.",
+    "features": [
+      "Intel Core Ultra 5 125H (14 cores, with dedicated AI Boost)",
+      "Intel Arc integrated Graphics",
+      "16GB LPDDR5X RAM",
+      "512GB PCIe Gen4 SSD",
+      "14-inch 2.8K (2880x1800) 90Hz OLED 100% DCI-P3 Display",
+      "1440p QHD AI Webcam with background blur and gaze correction"
+    ],
+    "specifications": {
+      "Processor": "Intel Core Ultra 5 125H",
+      "Graphics": "Intel Arc Graphics",
+      "Memory": "16GB LPDDR5X",
+      "Storage": "512GB NVMe SSD",
+      "Display": "14\" 2.8K 90Hz OLED",
+      "Battery": "65Whr (Up to 11 hours)",
+      "Weight": "1.32 kg"
+    },
+    "best_for": [
+      "College Students",
+      "Web Development",
+      "Budget Programming",
+      "Office Productivity",
+      "Daily Multitasking"
+    ]
+  },
+  {
+    "id": "lap_06",
+    "name": "HP Omen 16 (2024)",
+    "brand": "HP",
+    "category": "laptop",
+    "price": 118990,
+    "rating": 4.6,
+    "rating_count": 520,
+    "image_url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?auto=format&fit=crop&w=800&q=80",
+    "description": "High performance gaming laptop engineered with AMD Ryzen 7 7840HS and NVIDIA RTX 4060 with Tempest Cooling Technology.",
+    "features": [
+      "AMD Ryzen 7 7840HS 8-Core Processor",
+      "NVIDIA GeForce RTX 4060 8GB GDDR6",
+      "16GB DDR5 5600MHz RAM (expandable to 64GB)",
+      "1TB PCIe Gen4 NVMe TLC M.2 SSD",
+      "16.1-inch FHD 165Hz IPS micro-edge anti-glare display",
+      "Omen Tempest 3-sided venting cooling system"
+    ],
+    "specifications": {
+      "Processor": "AMD Ryzen 7 7840HS",
+      "Graphics": "NVIDIA RTX 4060 8GB",
+      "Memory": "16GB DDR5",
+      "Storage": "1TB SSD",
+      "Display": "16.1\" FHD 165Hz IPS",
+      "Battery": "83Whr (Up to 7 hours)",
+      "Weight": "2.37 kg"
+    },
+    "best_for": [
+      "AAA Gaming",
+      "Game Development",
+      "Python & PyTorch AI projects",
+      "Video Rendering"
+    ]
+  },
+  {
+    "id": "lap_07",
+    "name": "Apple MacBook Air 15 M3",
+    "brand": "Apple",
+    "category": "laptop",
+    "price": 134900,
+    "rating": 4.9,
+    "rating_count": 1820,
+    "image_url": "https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?auto=format&fit=crop&w=800&q=80",
+    "description": "Impossibly thin 15-inch fanless laptop with lightning-fast M3 chip, dual external display support, and silent operation.",
+    "features": [
+      "Apple M3 chip (8-core CPU, 10-core GPU, Hardware ray tracing)",
+      "16GB Unified Memory",
+      "512GB SSD Storage",
+      "15.3-inch Liquid Retina display with 500 nits brightness",
+      "Fanless silent design with 18 hours battery life",
+      "MagSafe 3 charging and dual Thunderbolt / USB 4 ports"
+    ],
+    "specifications": {
+      "Processor": "Apple M3 (8-core CPU)",
+      "Graphics": "10-core GPU",
+      "Memory": "16GB Unified Memory",
+      "Storage": "512GB SSD",
+      "Display": "15.3\" Liquid Retina",
+      "Battery": "66.5Whr (Up to 18 hours)",
+      "Weight": "1.51 kg"
+    },
+    "best_for": [
+      "Software Development",
+      "Data Analysis",
+      "Everyday Work and Productivity",
+      "Silent Computing",
+      "Long Battery Life"
+    ]
+  },
+  {
+    "id": "lap_08",
+    "name": "ASUS TUF Gaming A15",
+    "brand": "ASUS",
+    "category": "laptop",
+    "price": 79990,
+    "rating": 4.5,
+    "rating_count": 2100,
+    "image_url": "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=800&q=80",
+    "description": "Military-grade durability gaming powerhouse under 80k featuring AMD Ryzen 7 7735HS and NVIDIA RTX 4050 with 90Wh battery.",
+    "features": [
+      "AMD Ryzen 7 7735HS Processor",
+      "NVIDIA GeForce RTX 4050 6GB GDDR6 (140W Max TGP)",
+      "16GB DDR5 4800MHz RAM",
+      "512GB PCIe 4.0 NVMe SSD",
+      "15.6-inch FHD 144Hz IPS display with G-Sync",
+      "MIL-STD-810H military standard toughness"
+    ],
+    "specifications": {
+      "Processor": "AMD Ryzen 7 7735HS",
+      "Graphics": "NVIDIA RTX 4050 (140W)",
+      "Memory": "16GB DDR5",
+      "Storage": "512GB NVMe SSD",
+      "Display": "15.6\" FHD 144Hz",
+      "Battery": "90Whr (Up to 8 hours)",
+      "Weight": "2.2 kg"
+    },
+    "best_for": [
+      "Budget Gaming",
+      "Engineering College Students",
+      "CAD and 3D Modeling",
+      "Entry AI / Data Science"
+    ]
+  },
+  {
+    "id": "lap_09",
+    "name": "Lenovo ThinkPad X1 Carbon Gen 12",
+    "brand": "Lenovo",
+    "category": "laptop",
+    "price": 198900,
+    "rating": 4.8,
+    "rating_count": 410,
+    "image_url": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=800&q=80",
+    "description": "The gold standard of enterprise business laptops. Carbon fiber weave chassis, best-in-class tactile keyboard, and Intel Core Ultra 7.",
+    "features": [
+      "Intel Core Ultra 7 155U with Intel AI Boost",
+      "32GB LPDDR5x 6400MHz soldered RAM",
+      "1TB SSD M.2 2280 PCIe Gen4 Performance TLC Opal",
+      "14-inch 2.8K (2880 x 1800) OLED Anti-Glare 120Hz Display",
+      "Legendary ThinkPad TrackPoint and spill-resistant keyboard",
+      "Ultralight carbon fiber + recycled magnesium body at 1.09 kg"
+    ],
+    "specifications": {
+      "Processor": "Intel Core Ultra 7 155U",
+      "Graphics": "Intel Graphics",
+      "Memory": "32GB LPDDR5x",
+      "Storage": "1TB SSD",
+      "Display": "14\" 2.8K 120Hz OLED",
+      "Battery": "57Whr (Up to 14 hours)",
+      "Weight": "1.09 kg"
+    },
+    "best_for": [
+      "Enterprise Executives",
+      "DevOps and Cloud Architects",
+      "Frequent Business Travelers",
+      "Linux and Security Engineers"
+    ]
+  },
+  {
+    "id": "lap_10",
+    "name": "Samsung Galaxy Book4 Pro 360",
+    "brand": "Samsung",
+    "category": "laptop",
+    "price": 163990,
+    "rating": 4.7,
+    "rating_count": 280,
+    "image_url": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=800&q=80",
+    "description": "2-in-1 convertible laptop with stunning 16-inch 3K Dynamic AMOLED 2X touchscreen, included S-Pen, and seamless Galaxy ecosystem synergy.",
+    "features": [
+      "Intel Core Ultra 7 155H processor",
+      "16GB LPDDR5X memory",
+      "1TB NVMe SSD",
+      "16-inch 3K (2880 x 1800) Dynamic AMOLED 2X 120Hz Touchscreen",
+      "Bundled S-Pen with 4096 pressure levels",
+      "AKG quad speakers with Dolby Atmos"
+    ],
+    "specifications": {
+      "Processor": "Intel Core Ultra 7 155H",
+      "Graphics": "Intel Arc Graphics",
+      "Memory": "16GB LPDDR5X",
+      "Storage": "1TB NVMe SSD",
+      "Display": "16\" 3K 120Hz AMOLED Touch",
+      "Battery": "76Whr (Up to 15 hours)",
+      "Weight": "1.66 kg"
+    },
+    "best_for": [
+      "Digital Illustrators and Artists",
+      "Note Taking and Annotations",
+      "Samsung Galaxy Ecosystem Users",
+      "Multimedia Consumption"
+    ]
+  },
+  {
+    "id": "lap_11",
+    "name": "MSI Katana 15 B13VFK",
+    "brand": "MSI",
+    "category": "laptop",
+    "price": 89990,
+    "rating": 4.4,
+    "rating_count": 670,
+    "image_url": "https://images.unsplash.com/photo-1587614382346-4ec70e388b28?auto=format&fit=crop&w=800&q=80",
+    "description": "Sharp gaming laptop equipped with 13th Gen Intel Core i7-13620H and full-power RTX 4060 graphics for gamers and heavy compute tasks.",
+    "features": [
+      "Intel 13th Gen Core i7-13620H (10 Cores, up to 4.9GHz)",
+      "NVIDIA GeForce RTX 4060 8GB GDDR6 (105W)",
+      "16GB DDR5 5200MHz RAM",
+      "1TB NVMe PCIe Gen4 SSD",
+      "15.6-inch FHD (1920x1080) 144Hz IPS display",
+      "4-Zone RGB Gaming Keyboard with highlighted WASD"
+    ],
+    "specifications": {
+      "Processor": "Intel Core i7-13620H",
+      "Graphics": "NVIDIA RTX 4060 (105W)",
+      "Memory": "16GB DDR5",
+      "Storage": "1TB SSD",
+      "Display": "15.6\" FHD 144Hz IPS",
+      "Battery": "53.5Whr (Up to 4.5 hours)",
+      "Weight": "2.25 kg"
+    },
+    "best_for": [
+      "Mid-range Gaming",
+      "Python AI / Tensor computations",
+      "Computer Science Projects",
+      "Video Editing"
+    ]
+  },
+  {
+    "id": "lap_12",
+    "name": "ASUS Zenbook 14 OLED (UX3405)",
+    "brand": "ASUS",
+    "category": "laptop",
+    "price": 99990,
+    "rating": 4.7,
+    "rating_count": 490,
+    "image_url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80",
+    "description": "Sleek all-metal ultrabook with vibrant 3K 120Hz Lumina OLED display, Intel Core Ultra 7 processor, and huge 75Wh battery life.",
+    "features": [
+      "Intel Core Ultra 7 155H Processor",
+      "Intel Arc Graphics",
+      "16GB LPDDR5X RAM",
+      "1TB M.2 NVMe PCIe 4.0 SSD",
+      "14.0-inch 3K (2880 x 1800) 120Hz OLED 0.2ms HDR Display",
+      "1.2 kg all-metal chassis with military grade endurance"
+    ],
+    "specifications": {
+      "Processor": "Intel Core Ultra 7 155H",
+      "Graphics": "Intel Arc Graphics",
+      "Memory": "16GB LPDDR5X",
+      "Storage": "1TB SSD",
+      "Display": "14\" 3K 120Hz OLED",
+      "Battery": "75Whr (Up to 15 hours)",
+      "Weight": "1.2 kg"
+    },
+    "best_for": [
+      "Coding and Web Development",
+      "Color-accurate Photo Editing",
+      "Commuters and Remote Work",
+      "Portability and Display Enthusiasts"
+    ]
+  },
+  {
+    "id": "lap_13",
+    "name": "Acer Predator Helios Neo 16",
+    "brand": "Acer",
+    "category": "laptop",
+    "price": 124990,
+    "rating": 4.6,
+    "rating_count": 780,
+    "image_url": "https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?auto=format&fit=crop&w=800&q=80",
+    "description": "Heavy-duty beast featuring Intel Core i7 14th Gen, RTX 4060 with 140W Max TGP, 5th Gen AeroBlade 3D fan liquid metal cooling.",
+    "features": [
+      "Intel Core i7-14700HX (20 Cores, 28 Threads)",
+      "NVIDIA GeForce RTX 4060 8GB (140W TGP)",
+      "16GB DDR5 5600MHz RAM",
+      "1TB PCIe Gen4 NVMe SSD",
+      "16-inch WQXGA (2560 x 1600) 165Hz IPS 500 nits sRGB 100%",
+      "Liquid Metal thermal grease cooling"
+    ],
+    "specifications": {
+      "Processor": "Intel Core i7-14700HX",
+      "Graphics": "NVIDIA RTX 4060 140W",
+      "Memory": "16GB DDR5",
+      "Storage": "1TB SSD",
+      "Display": "16\" 2.5K 165Hz IPS",
+      "Battery": "90Whr (Up to 5.5 hours)",
+      "Weight": "2.6 kg"
+    },
+    "best_for": [
+      "Competitive Esports",
+      "Deep Learning Training",
+      "Blender 3D",
+      "Heavy Multithreaded Compiles"
+    ]
+  },
+  {
+    "id": "lap_14",
+    "name": "HP Pavilion Plus 14",
+    "brand": "HP",
+    "category": "laptop",
+    "price": 76990,
+    "rating": 4.5,
+    "rating_count": 510,
+    "image_url": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=800&q=80",
+    "description": "All-round everyday laptop with AMD Ryzen 7 7840U, bright 2.8K 120Hz OLED screen, 16GB RAM, and 5MP IR webcam with privacy shutter.",
+    "features": [
+      "AMD Ryzen 7 7840U 8-Core processor with AMD Radeon 780M graphics",
+      "16GB LPDDR5x 6400MHz RAM",
+      "512GB PCIe NVMe M.2 SSD",
+      "14-inch 2.8K (2880 x 1800) OLED 120Hz 0.2ms Display",
+      "5MP IR camera with temporal noise reduction and dual array mics"
+    ],
+    "specifications": {
+      "Processor": "AMD Ryzen 7 7840U",
+      "Graphics": "Radeon 780M Graphics",
+      "Memory": "16GB LPDDR5x",
+      "Storage": "512GB SSD",
+      "Display": "14\" 2.8K 120Hz OLED",
+      "Battery": "68Whr (Up to 11 hours)",
+      "Weight": "1.38 kg"
+    },
+    "best_for": [
+      "Everyday Office Work",
+      "Lightweight Coding",
+      "Zoom and Video Conferencing",
+      "Movie Streaming"
+    ]
+  },
+  {
+    "id": "lap_15",
+    "name": "Lenovo IdeaPad Slim 3 15",
+    "brand": "Lenovo",
+    "category": "laptop",
+    "price": 42990,
+    "rating": 4.3,
+    "rating_count": 3400,
+    "image_url": "https://images.unsplash.com/photo-1588702547919-26089e690ecc?auto=format&fit=crop&w=800&q=80",
+    "description": "Budget-friendly reliable daily driver laptop featuring Intel Core i5 12th Gen, 16GB RAM, and full FHD anti-glare screen.",
+    "features": [
+      "Intel Core i5-12450H (8 Cores, 12 Threads)",
+      "16GB LPDDR5 4800MHz RAM",
+      "512GB SSD M.2 2242 PCIe 4.0",
+      "15.6-inch FHD (1920x1080) Anti-glare IPS Display",
+      "Dolby Audio stereo speakers and privacy shutter camera"
+    ],
+    "specifications": {
+      "Processor": "Intel Core i5-12450H",
+      "Graphics": "Intel UHD Graphics",
+      "Memory": "16GB LPDDR5",
+      "Storage": "512GB SSD",
+      "Display": "15.6\" FHD IPS",
+      "Battery": "47Whr (Up to 6 hours)",
+      "Weight": "1.62 kg"
+    },
+    "best_for": [
+      "Entry Level Programming",
+      "School and College Assignments",
+      "Web Browsing",
+      "Value for Money"
+    ]
+  },
+  {
+    "id": "phone_01",
+    "name": "Apple iPhone 16 Pro Max",
+    "brand": "Apple",
+    "category": "smartphone",
+    "price": 144900,
+    "rating": 4.9,
+    "rating_count": 2900,
+    "image_url": "https://images.unsplash.com/photo-1695048133142-1a20484d2569?auto=format&fit=crop&w=800&q=80",
+    "description": "Flagship iPhone built with Grade 5 Titanium, Apple Intelligence generative features, A18 Pro chip, 5x optical telephoto lens, and Dedicated Camera Control button.",
+    "features": [
+      "A18 Pro chip with 6-core GPU and hardware ray tracing",
+      "Apple Intelligence on-device AI assistant capabilities",
+      "48MP Fusion Camera with 5x Telephoto optical zoom",
+      "Camera Control capacitive touch button for exposure and zoom",
+      "6.9-inch Super Retina XDR OLED ProMotion 120Hz Display",
+      "Titanium design with Ceramic Shield front"
+    ],
+    "specifications": {
+      "Processor": "Apple A18 Pro (3nm)",
+      "Camera": "48MP Main + 48MP Ultra-wide + 12MP 5x Telephoto",
+      "Display": "6.9\" Super Retina XDR OLED 120Hz",
+      "Storage": "256GB / 512GB / 1TB",
+      "Battery": "4685mAh (Up to 33 hours video playback)",
+      "Weight": "227g"
+    },
+    "best_for": [
+      "Pro Photography & 4K 120fps Dolby Vision Video",
+      "Mobile Gaming",
+      "Content Creators",
+      "Executive Status & Longevity"
+    ]
+  },
+  {
+    "id": "phone_02",
+    "name": "Samsung Galaxy S24 Ultra",
+    "brand": "Samsung",
+    "category": "smartphone",
+    "price": 129999,
+    "rating": 4.8,
+    "rating_count": 3400,
+    "image_url": "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?auto=format&fit=crop&w=800&q=80",
+    "description": "Ultimate Android flagship with Galaxy AI suite, 200MP camera, built-in S-Pen stylus, titanium frame, and anti-reflective Corning Gorilla Armor glass.",
+    "features": [
+      "Snapdragon 8 Gen 3 for Galaxy processor",
+      "Galaxy AI (Circle to Search, Live Call Translation, Generative Photo Edit)",
+      "200MP Quad Telephoto Camera system with 100x Space Zoom",
+      "6.8-inch QHD+ Dynamic AMOLED 2X 120Hz Flat Display (2600 nits peak)",
+      "Built-in Bluetooth S-Pen stylus",
+      "Corning Gorilla Armor anti-reflective glass"
+    ],
+    "specifications": {
+      "Processor": "Snapdragon 8 Gen 3 (4nm)",
+      "Camera": "200MP + 50MP (5x) + 10MP (3x) + 12MP Ultra-wide",
+      "Display": "6.8\" QHD+ Dynamic AMOLED 2X",
+      "Storage": "256GB / 512GB / 1TB (12GB RAM)",
+      "Battery": "5000mAh with 45W fast charging",
+      "Weight": "232g"
+    },
+    "best_for": [
+      "Extreme Zoom & Concert Photography",
+      "Productivity & Note Taking with S-Pen",
+      "Power Users and Multitasking",
+      "Outdoor Sunlight Visibility"
+    ]
+  },
+  {
+    "id": "phone_03",
+    "name": "Google Pixel 9 Pro XL",
+    "brand": "Google",
+    "category": "smartphone",
+    "price": 124999,
+    "rating": 4.7,
+    "rating_count": 1150,
+    "image_url": "https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=800&q=80",
+    "description": "Google's most advanced AI phone powered by Google Tensor G4, Gemini Live built-in, class-leading computational photography, and 7 years of OS updates.",
+    "features": [
+      "Google Tensor G4 chip with Titan M2 security coprocessor",
+      "Gemini Nano with Multimodality and Gemini Live AI",
+      "Triple pro camera system with Add Me and Reimagine editing",
+      "6.8-inch Super Actua LTPO OLED 120Hz display (3000 nits peak)",
+      "16GB RAM for smooth AI inference",
+      "7 years of Android OS and Security updates"
+    ],
+    "specifications": {
+      "Processor": "Google Tensor G4",
+      "Camera": "50MP Main + 48MP Ultra-wide + 48MP 5x Telephoto",
+      "Display": "6.8\" LTPO OLED 120Hz (3000 nits)",
+      "Storage": "256GB / 512GB (16GB RAM)",
+      "Battery": "5060mAh with 37W fast charging",
+      "Weight": "221g"
+    },
+    "best_for": [
+      "Pure Android Enthusiasts",
+      "Natural Color Photography & Night Sight",
+      "AI Assistants & Voice Transcription",
+      "Long-term Software Support"
+    ]
+  },
+  {
+    "id": "phone_04",
+    "name": "OnePlus 12",
+    "brand": "OnePlus",
+    "category": "smartphone",
+    "price": 64999,
+    "rating": 4.7,
+    "rating_count": 4200,
+    "image_url": "https://images.unsplash.com/photo-1565849904461-04a58ad377e0?auto=format&fit=crop&w=800&q=80",
+    "description": "Flagship killer with Snapdragon 8 Gen 3, 4th Gen Hasselblad camera with 3x periscope zoom, 5400mAh battery, and blindingly fast 100W SUPERVOOC charging.",
+    "features": [
+      "Snapdragon 8 Gen 3 with Dual Cryo-velocity VC cooling",
+      "4th Gen Hasselblad Camera with Sony LYT-808 sensor",
+      "64MP 3x Periscope Telephoto (up to 120x digital zoom)",
+      "6.82-inch 2K 120Hz ProXDR 4500-nit display with Aqua Touch",
+      "5400mAh battery with 100W wired & 50W wireless charging"
+    ],
+    "specifications": {
+      "Processor": "Snapdragon 8 Gen 3",
+      "Camera": "50MP (Sony LYT-808) + 64MP Periscope + 48MP Ultra-wide",
+      "Display": "6.82\" 2K 120Hz AMOLED 4500 nits",
+      "Storage": "256GB / 512GB (12GB / 16GB RAM)",
+      "Battery": "5400mAh (100W SUPERVOOC)",
+      "Weight": "220g"
+    },
+    "best_for": [
+      "Flagship Performance under 70k",
+      "Hyper-fast Charging (1-100% in 26 mins)",
+      "Heavy Gaming with High FPS",
+      "Hasselblad Portrait Photography"
+    ]
+  },
+  {
+    "id": "phone_05",
+    "name": "Vivo X100 Pro",
+    "brand": "Vivo",
+    "category": "smartphone",
+    "price": 89999,
+    "rating": 4.8,
+    "rating_count": 890,
+    "image_url": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=80",
+    "description": "Unrivaled mobile photography monster featuring 1-inch Sony IMX989 sensor with ZEISS APO Floating Telephoto lens and Dimensity 9300.",
+    "features": [
+      "MediaTek Dimensity 9300 All-Big-Core flagship chip",
+      "1-inch Sony IMX989 main sensor with ZEISS T* coating",
+      "50MP ZEISS APO Floating Periscope Telephoto with 4.3x optical zoom",
+      "Custom Vivo V3 imaging chip for 4K cinematic portrait video",
+      "6.78-inch 1.5K 120Hz LTPO AMOLED display (3000 nits)"
+    ],
+    "specifications": {
+      "Processor": "MediaTek Dimensity 9300",
+      "Camera": "50MP (1-inch) + 50MP ZEISS Telephoto + 50MP Ultra-wide",
+      "Display": "6.78\" 1.5K LTPO AMOLED 120Hz",
+      "Storage": "512GB (16GB RAM)",
+      "Battery": "5400mAh (100W FlashCharge)",
+      "Weight": "225g"
+    },
+    "best_for": [
+      "Professional Smartphone Photography",
+      "Low-light and Sunset Telephoto Portraits",
+      "Cinematic 4K Video Recording",
+      "High-end Performance"
+    ]
+  },
+  {
+    "id": "phone_06",
+    "name": "Apple iPhone 15",
+    "brand": "Apple",
+    "category": "smartphone",
+    "price": 65999,
+    "rating": 4.8,
+    "rating_count": 8500,
+    "image_url": "https://images.unsplash.com/photo-1592750475338-74b7b21085ab?auto=format&fit=crop&w=800&q=80",
+    "description": "Featuring Dynamic Island, 48MP main camera with 2x optical quality zoom, color-infused glass back, and universal USB-C connectivity.",
+    "features": [
+      "A16 Bionic chip with 5-core GPU",
+      "Dynamic Island interactive pill notifications",
+      "48MP Main camera with 24MP super-high-resolution default",
+      "2x lossless optical telephoto crop",
+      "Universal USB-C connector",
+      "Color-infused glass and aluminum aerospace design"
+    ],
+    "specifications": {
+      "Processor": "Apple A16 Bionic",
+      "Camera": "48MP Main + 12MP Ultra-wide",
+      "Display": "6.1\" Super Retina XDR OLED (2000 nits peak)",
+      "Storage": "128GB / 256GB",
+      "Battery": "3349mAh (Up to 20 hours video)",
+      "Weight": "171g"
+    },
+    "best_for": [
+      "Compact iPhone Experience",
+      "Everyday Social Media Photos & Reels",
+      "Apple Ecosystem Entry",
+      "Great Resale Value"
+    ]
+  },
+  {
+    "id": "phone_07",
+    "name": "iQOO 12 5G",
+    "brand": "iQOO",
+    "category": "smartphone",
+    "price": 52999,
+    "rating": 4.6,
+    "rating_count": 3100,
+    "image_url": "https://images.unsplash.com/photo-1580910051074-3eb694886505?auto=format&fit=crop&w=800&q=80",
+    "description": "Performance monster offering Snapdragon 8 Gen 3 under 55k with dedicated Supercomputing Chip Q1 for 144FPS gaming and 64MP periscope telephoto.",
+    "features": [
+      "Snapdragon 8 Gen 3 Processor",
+      "Supercomputing Chip Q1 for 144Hz Game Frame Interpolation",
+      "64MP Periscope Telephoto with 3x optical & 100x digital zoom",
+      "6.78-inch 1.5K 144Hz LTPO AMOLED display (3000 nits)",
+      "120W FlashCharge with 5000mAh battery"
+    ],
+    "specifications": {
+      "Processor": "Snapdragon 8 Gen 3",
+      "Camera": "50MP 1/1.3\" Main + 64MP Periscope + 50MP Ultra-wide",
+      "Display": "6.78\" 1.5K 144Hz LTPO AMOLED",
+      "Storage": "256GB / 512GB (12GB / 16GB RAM)",
+      "Battery": "5000mAh (120W Charging)",
+      "Weight": "203g"
+    },
+    "best_for": [
+      "Hardcore BGMI & Call of Duty Mobile Gaming",
+      "Performance on a Budget",
+      "Fast 144Hz Refresh Rate Display",
+      "Versatile Zoom Camera"
+    ]
+  },
+  {
+    "id": "phone_08",
+    "name": "Nothing Phone (2)",
+    "brand": "Nothing",
+    "category": "smartphone",
+    "price": 36999,
+    "rating": 4.5,
+    "rating_count": 2700,
+    "image_url": "https://images.unsplash.com/photo-1567581935884-3349723552ca?auto=format&fit=crop&w=800&q=80",
+    "description": "Distinctive transparent glyph interface with customized LED lighting, clean bloatware-free Nothing OS 2.5, and Snapdragon 8+ Gen 1.",
+    "features": [
+      "Snapdragon 8+ Gen 1 chipset",
+      "Glyph Interface with 33 addressable LED lighting zones and timer tracking",
+      "Dual 50MP Sony IMX890 cameras with OIS",
+      "6.7-inch Flexible LTPO OLED 1-120Hz display (1600 nits)",
+      "Nothing OS with monochrome widgets and zero bloatware"
+    ],
+    "specifications": {
+      "Processor": "Snapdragon 8+ Gen 1",
+      "Camera": "50MP (Sony IMX890 OIS) + 50MP Ultra-wide",
+      "Display": "6.7\" LTPO OLED 1-120Hz",
+      "Storage": "128GB / 256GB / 512GB",
+      "Battery": "4700mAh with 45W wired & 15W wireless",
+      "Weight": "201g"
+    },
+    "best_for": [
+      "Unique Aesthetic & Transparency Lovers",
+      "Clean Bloatware-free Software",
+      "Visual Notifications via Glyph LEDs",
+      "Value under 40k"
+    ]
+  },
+  {
+    "id": "phone_09",
+    "name": "Realme GT 6",
+    "brand": "Realme",
+    "category": "smartphone",
+    "price": 40999,
+    "rating": 4.6,
+    "rating_count": 1850,
+    "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?auto=format&fit=crop&w=800&q=80",
+    "description": "AI flagship killer packed with Snapdragon 8s Gen 3, world-record 6000-nit Ultra Bright 8T LTPO display, and 120W fast charging.",
+    "features": [
+      "Snapdragon 8s Gen 3 AI processor",
+      "World-first 6000 nits peak brightness 8T LTPO 120Hz display",
+      "50MP Sony LYT-808 OIS main camera + 50MP 2x telephoto portrait lens",
+      "5500mAh dual-cell battery with 120W SUPERVOOC charging",
+      "NextAI features: AI Smart Removal, AI Smart Loop, AI Night Vision"
+    ],
+    "specifications": {
+      "Processor": "Snapdragon 8s Gen 3",
+      "Camera": "50MP (Sony LYT-808) + 50MP Telephoto + 8MP Ultra-wide",
+      "Display": "6.78\" 1.5K 120Hz LTPO 6000 nits",
+      "Storage": "256GB / 512GB (8GB / 12GB / 16GB RAM)",
+      "Battery": "5500mAh (120W fast charging)",
+      "Weight": "199g"
+    },
+    "best_for": [
+      "Extreme Direct Sunlight Visibility",
+      "Heavy Day-long Battery Use",
+      "Flagship Level Performance at Midrange Price",
+      "AI Photo Editing"
+    ]
+  },
+  {
+    "id": "phone_10",
+    "name": "Google Pixel 8a",
+    "brand": "Google",
+    "category": "smartphone",
+    "price": 49999,
+    "rating": 4.6,
+    "rating_count": 1600,
+    "image_url": "https://images.unsplash.com/photo-1574944985070-8f3ebc6b79d2?auto=format&fit=crop&w=800&q=80",
+    "description": "Compact AI phone offering Google Tensor G3, Best Take, Magic Audio Eraser, IP67 water resistance, and 7 years of software support.",
+    "features": [
+      "Google Tensor G3 chip with Google AI capabilities",
+      "Best Take and Magic Editor photo tools",
+      "6.1-inch Actua OLED 120Hz display",
+      "64MP main camera with Super Res Zoom",
+      "IP67 dust and water resistance with matte back finish",
+      "7 years of OS, Security, and Feature Drop updates"
+    ],
+    "specifications": {
+      "Processor": "Google Tensor G3",
+      "Camera": "64MP Quad PD Main + 13MP Ultra-wide",
+      "Display": "6.1\" FHD+ OLED 120Hz",
+      "Storage": "128GB / 256GB (8GB RAM)",
+      "Battery": "4492mAh with wireless charging support",
+      "Weight": "188g"
+    },
+    "best_for": [
+      "Compact Form Factor Lovers",
+      "Point-and-shoot Camera Quality under 50k",
+      "Google AI Features & Gemini Integration",
+      "Guaranteed 7 Years of Updates"
+    ]
+  },
+  {
+    "id": "phone_11",
+    "name": "Motorola Edge 50 Ultra",
+    "brand": "Motorola",
+    "category": "smartphone",
+    "price": 59999,
+    "rating": 4.7,
+    "rating_count": 920,
+    "image_url": "https://images.unsplash.com/photo-1565849904461-04a58ad377e0?auto=format&fit=crop&w=800&q=80",
+    "description": "Artisan design with real Nordic wood or vegan leather back, Pantone validated 144Hz pOLED display, Snapdragon 8s Gen 3, and 125W TurboPower.",
+    "features": [
+      "Snapdragon 8s Gen 3 with Moto AI engine",
+      "Real FSC-certified Nordic Wood & Vegan Leather back options",
+      "6.7-inch 1.5K 144Hz Curved pOLED Pantone Validated screen",
+      "50MP Main + 50MP Ultra-wide + 64MP 3x Periscope Telephoto",
+      "125W TurboPower wired + 50W wireless charging"
+    ],
+    "specifications": {
+      "Processor": "Snapdragon 8s Gen 3",
+      "Camera": "50MP OIS + 50MP Ultra-wide + 64MP Periscope",
+      "Display": "6.7\" 1.5K 144Hz Curved pOLED",
+      "Storage": "512GB (12GB RAM)",
+      "Battery": "4500mAh (125W TurboPower)",
+      "Weight": "197g"
+    },
+    "best_for": [
+      "Unique Real Wood / Leather Aesthetics",
+      "Smooth 144Hz Display",
+      "Clean Hello UI with Ready For PC connectivity",
+      "Complete Camera System with Periscope"
+    ]
+  },
+  {
+    "id": "phone_12",
+    "name": "Xiaomi 14",
+    "brand": "Xiaomi",
+    "category": "smartphone",
+    "price": 69999,
+    "rating": 4.7,
+    "rating_count": 1400,
+    "image_url": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=80",
+    "description": "Compact powerhouse with 6.36-inch display, Leica Summilux optical lenses with 75mm floating telephoto, Snapdragon 8 Gen 3, and 90W HyperCharge.",
+    "features": [
+      "Snapdragon 8 Gen 3 flagship platform",
+      "Leica Summilux optical lens with Light Fusion 900 sensor",
+      "50MP Leica 75mm Floating Telephoto with 10cm macro ability",
+      "Compact 6.36-inch 1.5K 120Hz LTPO OLED display (3000 nits)",
+      "90W wired & 50W wireless HyperCharge"
+    ],
+    "specifications": {
+      "Processor": "Snapdragon 8 Gen 3",
+      "Camera": "50MP Leica Main + 50MP Leica Telephoto + 50MP Ultra-wide",
+      "Display": "6.36\" 1.5K LTPO OLED 120Hz",
+      "Storage": "512GB (12GB RAM)",
+      "Battery": "4610mAh (90W HyperCharge)",
+      "Weight": "193g"
+    },
+    "best_for": [
+      "Compact Android Flagship Lovers",
+      "Leica Color Tone Photography & Macro Shots",
+      "One-handed Usability",
+      "Premium Glass and Metal Construction"
+    ]
+  },
+  {
+    "id": "phone_13",
+    "name": "Samsung Galaxy A55 5G",
+    "brand": "Samsung",
+    "category": "smartphone",
+    "price": 39999,
+    "rating": 4.4,
+    "rating_count": 4800,
+    "image_url": "https://images.unsplash.com/photo-1567581935884-3349723552ca?auto=format&fit=crop&w=800&q=80",
+    "description": "Premium mid-range phone featuring Gorilla Glass Victus+ front and back, metal frame, Samsung Knox Vault security, and IP67 rating.",
+    "features": [
+      "Exynos 1480 processor with AMD Xclipse 530 GPU",
+      "Samsung Knox Vault hardware security certification",
+      "6.6-inch FHD+ Super AMOLED 120Hz display with Vision Booster",
+      "50MP Main OIS camera with Big Pixel nightography",
+      "IP67 dust and water resistance and metal sides"
+    ],
+    "specifications": {
+      "Processor": "Exynos 1480 (4nm)",
+      "Camera": "50MP OIS + 12MP Ultra-wide + 5MP Macro",
+      "Display": "6.6\" FHD+ Super AMOLED 120Hz",
+      "Storage": "128GB / 256GB (8GB / 12GB RAM)",
+      "Battery": "5000mAh (25W charging)",
+      "Weight": "213g"
+    },
+    "best_for": [
+      "Samsung Brand Reliability & Security",
+      "Enterprise & Knox Security Requirements",
+      "Durability & Water Resistance",
+      "Long-term 4 Android OS upgrades"
+    ]
+  },
+  {
+    "id": "phone_14",
+    "name": "OnePlus Nord 4 5G",
+    "brand": "OnePlus",
+    "category": "smartphone",
+    "price": 29999,
+    "rating": 4.6,
+    "rating_count": 6200,
+    "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?auto=format&fit=crop&w=800&q=80",
+    "description": "The only metal unibody 5G smartphone with Snapdragon 7+ Gen 3, huge 5500mAh battery, 100W fast charging, and 6 years of security support.",
+    "features": [
+      "Snapdragon 7+ Gen 3 Processor",
+      "All-metal unibody ultra-sleek 7.99mm design",
+      "50MP Sony LYT-600 OIS camera",
+      "6.74-inch 1.5K 120Hz AMOLED display (2150 nits)",
+      "5500mAh battery with 100W SUPERVOOC charging (1-100% in 28 mins)"
+    ],
+    "specifications": {
+      "Processor": "Snapdragon 7+ Gen 3",
+      "Camera": "50MP OIS + 8MP Ultra-wide",
+      "Display": "6.74\" 1.5K AMOLED 120Hz",
+      "Storage": "128GB / 256GB (8GB / 12GB RAM)",
+      "Battery": "5500mAh (100W charging)",
+      "Weight": "199g"
+    },
+    "best_for": [
+      "Best Phone under 30k",
+      "Metal Unibody Build Quality",
+      "Massive Battery Life with Instant Charging",
+      "Lag-free OxygenOS"
+    ]
+  },
+  {
+    "id": "phone_15",
+    "name": "POCO X6 Pro 5G",
+    "brand": "POCO",
+    "category": "smartphone",
+    "price": 24999,
+    "rating": 4.5,
+    "rating_count": 8900,
+    "image_url": "https://images.unsplash.com/photo-1580910051074-3eb694886505?auto=format&fit=crop&w=800&q=80",
+    "description": "Benchmark destroyer with MediaTek Dimensity 8300-Ultra scoring 1.4 million on AnTuTu, 1.5K 120Hz AMOLED screen, and 67W Turbo Charge under 25k.",
+    "features": [
+      "MediaTek Dimensity 8300-Ultra (4nm)",
+      "WildBoost Gaming Optimization 2.0",
+      "6.67-inch 1.5K Flow AMOLED 120Hz display with Dolby Vision",
+      "64MP OIS triple camera with 4K video recording",
+      "5000mAh battery with 67W Turbo Charge in box"
+    ],
+    "specifications": {
+      "Processor": "Dimensity 8300-Ultra",
+      "Camera": "64MP OIS + 8MP Ultra-wide + 2MP Macro",
+      "Display": "6.67\" 1.5K Flow AMOLED 120Hz",
+      "Storage": "256GB / 512GB (8GB / 12GB RAM)",
+      "Battery": "5000mAh (67W Charger in box)",
+      "Weight": "186g"
+    },
+    "best_for": [
+      "Extreme Gaming Performance under 25k",
+      "Students & High FPS Mobile Gaming",
+      "Stunning 1.5K Dolby Vision Display",
+      "High Value for Money"
+    ]
+  },
+  {
+    "id": "phone_16",
+    "name": "Samsung Galaxy M15 5G",
+    "brand": "Samsung",
+    "category": "smartphone",
+    "price": 9999,
+    "rating": 4.5,
+    "rating_count": 5400,
+    "image_url": "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?auto=format&fit=crop&w=800&q=80",
+    "description": "Best Samsung 5G smartphone under 10000 featuring 6.5-inch FHD+ 90Hz Super AMOLED display, massive 6000mAh battery, and 50MP triple camera.",
+    "features": [
+      "MediaTek Dimensity 6100+ 5G Processor",
+      "6.5-inch FHD+ 90Hz Super AMOLED Infinity-U Display",
+      "6000mAh monster battery with 25W fast charging",
+      "50MP Main + 5MP Ultra-wide + 2MP Macro Camera",
+      "4 Generations of Android OS upgrades and 5 years of security updates"
+    ],
+    "specifications": {
+      "Processor": "MediaTek Dimensity 6100+ (6nm)",
+      "Camera": "50MP Main + 5MP Ultra-wide + 2MP Macro",
+      "Display": "6.5\" FHD+ 90Hz Super AMOLED",
+      "Storage": "128GB (4GB / 6GB RAM, expandable to 1TB)",
+      "Battery": "6000mAh",
+      "Weight": "217g"
+    },
+    "best_for": [
+      "Best 5G Phone Under ₹10,000",
+      "Super AMOLED Display under 10k",
+      "2-Day Battery Life (6000mAh)",
+      "Long-term Software Updates"
+    ]
+  },
+  {
+    "id": "phone_17",
+    "name": "Redmi 13C 5G",
+    "brand": "Xiaomi",
+    "category": "smartphone",
+    "price": 8999,
+    "rating": 4.4,
+    "rating_count": 8200,
+    "image_url": "https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=800&q=80",
+    "description": "Ultra-affordable 5G phone with dynamic Star Trail design, MediaTek Dimensity 6100+ 5G processor, 50MP AI dual camera, and 90Hz display.",
+    "features": [
+      "MediaTek Dimensity 6100+ 5G Octa-core processor",
+      "6.74-inch 90Hz smooth display with Corning Gorilla Glass",
+      "50MP AI dual camera with classic film filters",
+      "5000mAh all-day battery with 18W fast charging support",
+      "Side fingerprint sensor and 3.5mm headphone jack"
+    ],
+    "specifications": {
+      "Processor": "Dimensity 6100+ 5G",
+      "Camera": "50MP AI Main + Secondary Lens",
+      "Display": "6.74\" HD+ 90Hz Display",
+      "Storage": "128GB (4GB / 6GB / 8GB RAM)",
+      "Battery": "5000mAh",
+      "Weight": "192g"
+    },
+    "best_for": [
+      "Budget 5G Connectivity under 9k",
+      "Students and Daily Multitasking",
+      "Large 6.74\" Video Streaming Screen",
+      "Clean Value for Money"
+    ]
+  },
+  {
+    "id": "phone_18",
+    "name": "Moto G24 Power",
+    "brand": "Motorola",
+    "category": "smartphone",
+    "price": 7999,
+    "rating": 4.4,
+    "rating_count": 6100,
+    "image_url": "https://images.unsplash.com/photo-1565849904461-04a58ad377e0?auto=format&fit=crop&w=800&q=80",
+    "description": "Massive 6000mAh battery phone with clean ad-free near-stock Android 14, 33W TurboPower charger included in box, and stereo Dolby Atmos speakers.",
+    "features": [
+      "Gigantic 6000mAh battery with 33W TurboPower fast charger in the box",
+      "Clean near-stock Android 14 with zero bloatware",
+      "50MP Quad Pixel camera with dedicated Macro Vision",
+      "6.56-inch 90Hz IPS LCD display with Auto Night mode",
+      "Stereo speakers with Dolby Atmos and IP52 water-repellent design"
+    ],
+    "specifications": {
+      "Processor": "MediaTek Helio G85",
+      "Camera": "50MP Quad Pixel + 2MP Macro",
+      "Display": "6.56\" HD+ 90Hz IPS",
+      "Storage": "128GB (4GB / 8GB RAM)",
+      "Battery": "6000mAh (33W TurboPower)",
+      "Weight": "197g"
+    },
+    "best_for": [
+      "Best Phone Under ₹8,000",
+      "Clean Bloatware-Free Android 14",
+      "Massive 6000mAh Battery Life",
+      "Fast 33W In-box Charger"
+    ]
+  },
+  {
+    "id": "phone_19",
+    "name": "POCO M6 5G",
+    "brand": "POCO",
+    "category": "smartphone",
+    "price": 8499,
+    "rating": 4.3,
+    "rating_count": 9400,
+    "image_url": "https://images.unsplash.com/photo-1580910051074-3eb694886505?auto=format&fit=crop&w=800&q=80",
+    "description": "The 5G speedster under 8500 featuring dual 5G SIM standby, Dimensity 6100+ chipset, premium glass-feel design, and splash resistance.",
+    "features": [
+      "MediaTek Dimensity 6100+ 5G chip",
+      "Dual 5G SIM support with Airtel & Jio True 5G compatibility",
+      "50MP AI Dual Camera system with Night Mode",
+      "6.74-inch 90Hz display with TUV Low Blue Light certification",
+      "5000mAh battery with Type-C 18W charging"
+    ],
+    "specifications": {
+      "Processor": "Dimensity 6100+ 5G",
+      "Camera": "50MP AI + Depth Sensor",
+      "Display": "6.74\" 90Hz HD+",
+      "Storage": "64GB / 128GB (4GB / 6GB RAM)",
+      "Battery": "5000mAh",
+      "Weight": "195g"
+    },
+    "best_for": [
+      "Affordable 5G Internet Browsing",
+      "Delivery Riders & Field Workers",
+      "Long Battery and Rugged Reliability",
+      "High Value under ₹8,500"
+    ]
+  },
+  {
+    "id": "phone_20",
+    "name": "Realme Narzo N63",
+    "brand": "Realme",
+    "category": "smartphone",
+    "price": 7499,
+    "rating": 4.3,
+    "rating_count": 3900,
+    "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?auto=format&fit=crop&w=800&q=80",
+    "description": "Ultra-slim vegan leather finish phone with fastest-in-segment 45W SUPERVOOC charging, Air Gestures, and Rainwater Smart Touch.",
+    "features": [
+      "45W SUPERVOOC fast charge (1-50% in 30 mins)",
+      "Premium Vegan Leather back design in Twilight Purple",
+      "Air Gestures and Dynamic Button customized shortcuts",
+      "Rainwater Smart Touch technology for wet finger touch response",
+      "50MP AI camera with Night Scene mode"
+    ],
+    "specifications": {
+      "Processor": "Unisoc T612 Octa-core",
+      "Camera": "50MP AI Main Camera",
+      "Display": "6.74\" 90Hz Eye Comfort Display",
+      "Storage": "64GB / 128GB (4GB RAM)",
+      "Battery": "5000mAh (45W Fast Charging)",
+      "Weight": "189g"
+    },
+    "best_for": [
+      "Fastest 45W Charging Under ₹7,500",
+      "Vegan Leather Stylish Design",
+      "Rainwater & Wet Screen Touch Support",
+      "Entry Level Budget Smartphone"
+    ]
+  },
+  {
+    "id": "phone_21",
+    "name": "iQOO Z9x 5G",
+    "brand": "iQOO",
+    "category": "smartphone",
+    "price": 12999,
+    "rating": 4.5,
+    "rating_count": 7800,
+    "image_url": "https://images.unsplash.com/photo-1580910051074-3eb694886505?auto=format&fit=crop&w=800&q=80",
+    "description": "Slimmest 6000mAh 5G phone in segment with Snapdragon 6 Gen 1 (4nm), 120Hz ultra-bright 1000 nits display, and dual stereo speakers.",
+    "features": [
+      "Snapdragon 6 Gen 1 (4nm TSMC flagship process)",
+      "6000mAh battery with 44W FlashCharge in ultra-slim 7.99mm body",
+      "6.72-inch 120Hz FHD+ display (1000 nits high brightness mode)",
+      "50MP ultra-clear AI camera with 4K video recording",
+      "IP64 dust and water resistance with wet-finger touch"
+    ],
+    "specifications": {
+      "Processor": "Snapdragon 6 Gen 1 (4nm)",
+      "Camera": "50MP Main + 2MP Bokeh",
+      "Display": "6.72\" FHD+ 120Hz",
+      "Storage": "128GB (4GB / 6GB / 8GB RAM)",
+      "Battery": "6000mAh (44W FlashCharge)",
+      "Weight": "199g"
+    },
+    "best_for": [
+      "Best Performance Under ₹13,000",
+      "Massive 6000mAh 2-day Battery",
+      "Gaming under 15k with Snapdragon 6 Gen 1",
+      "Smooth 120Hz Display"
+    ]
+  },
+  {
+    "id": "phone_22",
+    "name": "Moto G64 5G",
+    "brand": "Motorola",
+    "category": "smartphone",
+    "price": 14999,
+    "rating": 4.5,
+    "rating_count": 6400,
+    "image_url": "https://images.unsplash.com/photo-1565849904461-04a58ad377e0?auto=format&fit=crop&w=800&q=80",
+    "description": "India's first MediaTek Dimensity 7025 5G phone with segment-leading 50MP OIS camera, 12GB RAM option, 6000mAh battery, and clean Android.",
+    "features": [
+      "MediaTek Dimensity 7025 6nm processor with 14 5G bands",
+      "50MP OIS (Optical Image Stabilization) camera with Macro + Depth",
+      "6000mAh long-lasting battery with 33W TurboPower charging",
+      "6.5-inch FHD+ 120Hz display with Gorilla Glass protection",
+      "Stereo speakers with Dolby Atmos and Hi-Res Audio"
+    ],
+    "specifications": {
+      "Processor": "Dimensity 7025 5G",
+      "Camera": "50MP OIS + 8MP Ultra-wide/Macro",
+      "Display": "6.5\" FHD+ 120Hz",
+      "Storage": "128GB / 256GB (8GB / 12GB RAM)",
+      "Battery": "6000mAh (33W TurboPower)",
+      "Weight": "192g"
+    },
+    "best_for": [
+      "Best Camera Phone with OIS Under ₹15,000",
+      "Clean Bloatware-free Android",
+      "12GB RAM Multi-tasking on Budget",
+      "Long Battery Life"
+    ]
+  },
+  {
+    "id": "phone_23",
+    "name": "CMF Phone 1 by Nothing",
+    "brand": "Nothing",
+    "category": "smartphone",
+    "price": 15999,
+    "rating": 4.6,
+    "rating_count": 8900,
+    "image_url": "https://images.unsplash.com/photo-1567581935884-3349723552ca?auto=format&fit=crop&w=800&q=80",
+    "description": "Unique modular smartphone with interchangeable back cases, MediaTek Dimensity 7300 5G, stunning 120Hz Super AMOLED display, and clean Nothing OS 2.6.",
+    "features": [
+      "MediaTek Dimensity 7300 5G processor with 4nm efficiency",
+      "6.67-inch Super AMOLED 120Hz display with 2000 nits peak brightness",
+      "50MP Sony camera with Ultra XDR algorithms",
+      "Interchangeable back covers with accessory mount (lanyard, stand, wallet)",
+      "Nothing OS 2.6 with zero pre-installed bloatware"
+    ],
+    "specifications": {
+      "Processor": "Dimensity 7300 (4nm)",
+      "Camera": "50MP Sony Main + Portrait Sensor",
+      "Display": "6.67\" Super AMOLED 120Hz (2000 nits)",
+      "Storage": "128GB (6GB / 8GB RAM)",
+      "Battery": "5000mAh (33W Fast Charging)",
+      "Weight": "197g"
+    },
+    "best_for": [
+      "Best Unique Design Phone Under ₹16,000",
+      "Customizable Modular Back Panels",
+      "Nothing OS Clean Aesthetic & Widgets",
+      "Bright 120Hz AMOLED Screen"
+    ]
+  },
+  {
+    "id": "phone_24",
+    "name": "OnePlus Nord CE4 Lite 5G",
+    "brand": "OnePlus",
+    "category": "smartphone",
+    "price": 19999,
+    "rating": 4.5,
+    "rating_count": 9200,
+    "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?auto=format&fit=crop&w=800&q=80",
+    "description": "Featuring flagship-grade 120Hz AMOLED 2100-nit display with Aqua Touch, 5500mAh massive battery, 80W SUPERVOOC charging, and 50MP Sony LYT-600 OIS camera.",
+    "features": [
+      "120Hz AMOLED display with 2,100 nits peak brightness and Aqua Touch",
+      "50MP Sony LYT-600 OIS camera with 2x in-sensor zoom",
+      "Huge 5500mAh battery with 80W SUPERVOOC fast charging",
+      "Dual stereo speakers with 300% Ultra Volume Mode",
+      "5W reverse wired charging to charge earbuds on the go"
+    ],
+    "specifications": {
+      "Processor": "Snapdragon 695 5G",
+      "Camera": "50MP Sony LYT-600 OIS + 2MP Depth",
+      "Display": "6.67\" 120Hz AMOLED 2100 nits",
+      "Storage": "128GB / 256GB (8GB RAM)",
+      "Battery": "5500mAh (80W SUPERVOOC)",
+      "Weight": "191g"
+    },
+    "best_for": [
+      "Best Phone Under ₹20,000",
+      "Super Bright AMOLED Display (2100 nits)",
+      "80W Lightning Fast Charging",
+      "Sony LYT-600 OIS Photography"
+    ]
+  },
+  {
+    "id": "audio_01",
+    "name": "Sony WH-1000XM5 Wireless Noise Cancelling Headphones",
+    "brand": "Sony",
+    "category": "headphones",
+    "price": 29990,
+    "rating": 4.8,
+    "rating_count": 7800,
+    "image_url": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=80",
+    "description": "Industry-leading active noise cancelling headphones with two processors, 8 microphones, Auto NC Optimizer, and crystal-clear hands-free calling with LDAC audio support.",
+    "features": [
+      "Integrated Processor V1 + HD Noise Cancelling Processor QN1",
+      "8 microphones for unmatched active noise cancellation",
+      "30mm precision carbon fiber driver unit with Hi-Res LDAC support",
+      "Up to 30 hours battery life with quick 3-min charge for 3 hours playback",
+      "Speak-to-Chat smart pause and multipoint Bluetooth connection",
+      "Ultra-comfortable lightweight soft fit synthetic leather design"
+    ],
+    "specifications": {
+      "Driver": "30mm Carbon Fiber Composite",
+      "Battery Life": "30 hours (ANC On) / 40 hours (ANC Off)",
+      "Noise Cancellation": "Auto NC Optimizer with 8 Microphones",
+      "Codecs": "LDAC, AAC, SBC",
+      "Connectivity": "Bluetooth 5.2 & 3.5mm AUX",
+      "Weight": "250g"
+    },
+    "best_for": [
+      "Air Travel & Commuting",
+      "Deep Focus Programming and Office Work",
+      "Audiophile High-Res Wireless Listening",
+      "Clear Conference Calls"
+    ]
+  },
+  {
+    "id": "audio_02",
+    "name": "Bose QuietComfort Ultra Headphones",
+    "brand": "Bose",
+    "category": "headphones",
+    "price": 35900,
+    "rating": 4.8,
+    "rating_count": 3100,
+    "image_url": "https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=800&q=80",
+    "description": "World-class spatialized audio with Bose Immersive Audio, breakthrough active noise cancellation, CustomTune acoustic calibration, and plush luxury comfort.",
+    "features": [
+      "Bose Immersive Audio for realistic spatial sound staging",
+      "CustomTune technology that personalizes audio to your unique ear shape",
+      "Quiet Mode, Aware Mode with ActiveSense, and Immersion Mode",
+      "Up to 24 hours of battery life (18 hours with Immersive Audio)",
+      "Luxurious ear cushions with cast aluminum yokes and elevated headband"
+    ],
+    "specifications": {
+      "Driver": "Custom Bose Acoustic Drivers",
+      "Battery Life": "24 hours (Standard ANC) / 18 hours (Spatial)",
+      "Noise Cancellation": "CustomTune Adaptive ANC",
+      "Codecs": "Snapdragon Sound aptX Adaptive, AAC, SBC",
+      "Connectivity": "Bluetooth 5.3 & 2.5mm to 3.5mm AUX",
+      "Weight": "252g"
+    },
+    "best_for": [
+      "Maximum Comfort for Long Sessions",
+      "Immersive Movie and Spatial Music Listening",
+      "Suppressing Airplane Engine Roar",
+      "Luxury Audio Experience"
+    ]
+  },
+  {
+    "id": "audio_03",
+    "name": "Apple AirPods Max (USB-C)",
+    "brand": "Apple",
+    "category": "headphones",
+    "price": 59900,
+    "rating": 4.7,
+    "rating_count": 4500,
+    "image_url": "https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=800&q=80",
+    "description": "High-fidelity audio masterpiece with custom dynamic drivers, computational audio via dual H1 chips, Personalised Spatial Audio with dynamic head tracking, and USB-C.",
+    "features": [
+      "Apple-designed 40mm dynamic driver with dual neodymium ring magnets",
+      "Dual Apple H1 headphone chips for computational acoustic processing",
+      "Pro-level Active Noise Cancellation with Transparency mode",
+      "Personalised Spatial Audio with dynamic head tracking for 3D theater sound",
+      "Knit-mesh canopy headband and anodized aluminum earcups",
+      "Lossless audio via USB-C wired connection"
+    ],
+    "specifications": {
+      "Driver": "40mm Apple Custom Dynamic Driver",
+      "Battery Life": "20 hours with ANC and Spatial Audio",
+      "Noise Cancellation": "Pro Active Noise Cancellation (8 Mics)",
+      "Codecs": "Apple Lossless (USB-C), AAC, SBC",
+      "Connectivity": "Bluetooth 5.0 & USB-C Audio",
+      "Weight": "384.8g"
+    },
+    "best_for": [
+      "Apple Ecosystem Seamless Integration",
+      "Spatial Audio & Apple Music Dolby Atmos",
+      "Design and Aesthetic Showpiece",
+      "Transparent Natural Passthrough Mode"
+    ]
+  },
+  {
+    "id": "audio_04",
+    "name": "Sennheiser Momentum 4 Wireless",
+    "brand": "Sennheiser",
+    "category": "headphones",
+    "price": 24990,
+    "rating": 4.8,
+    "rating_count": 5200,
+    "image_url": "https://images.unsplash.com/photo-1484704849700-f032a568e944?auto=format&fit=crop&w=800&q=80",
+    "description": "Signature Sennheiser audiophile acoustic performance with massive 60-hour battery life, Adaptive ANC, and custom sound personalization.",
+    "features": [
+      "Audiophile-inspired 42mm transducer acoustic system",
+      "Incredible 60-hour battery life on a single charge with ANC on",
+      "Adaptive Hybrid Active Noise Cancellation with Transparency Mode",
+      "Sound Personalization test creating a tailored EQ profile",
+      "aptX Adaptive, aptX, AAC, and SBC high-resolution codec support",
+      "Fold-flat design with premium fabric-textured travel case"
+    ],
+    "specifications": {
+      "Driver": "42mm Dynamic Transducer",
+      "Battery Life": "60 hours (ANC On)",
+      "Noise Cancellation": "Hybrid Adaptive ANC",
+      "Codecs": "aptX Adaptive, aptX, AAC, SBC",
+      "Connectivity": "Bluetooth 5.2, 3.5mm AUX & USB Audio",
+      "Weight": "293g"
+    },
+    "best_for": [
+      "Longest Battery Life (Weeks without charging)",
+      "Audiophile Sound Quality & Rich Bass",
+      "Travelers and Power Users",
+      "High-Fidelity Wireless Audio"
+    ]
+  },
+  {
+    "id": "audio_05",
+    "name": "Sony WF-1000XM5 True Wireless Earbuds",
+    "brand": "Sony",
+    "category": "headphones",
+    "price": 21990,
+    "rating": 4.7,
+    "rating_count": 3900,
+    "image_url": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=800&q=80",
+    "description": "The best noise cancelling in-ear true wireless earbuds with Dynamic Driver X, dual proprietary processors, bone conduction sensors, and AI noise reduction.",
+    "features": [
+      "Dynamic Driver X for wide frequency reproduction and deep bass",
+      "Dual processors: HD Noise Cancelling Processor QN2e and Integrated Processor V2",
+      "Bone conduction sensors and beamforming microphones for voice clarity",
+      "LDAC and High-Resolution Audio Wireless certified",
+      "Compact 25% smaller and 20% lighter design than XM4 with polyurethane foam tips",
+      "IPX4 water resistance and 24 hours total battery life with case"
+    ],
+    "specifications": {
+      "Driver": "8.4mm Dynamic Driver X",
+      "Battery Life": "8 hours (earbuds) + 16 hours (case) = 24 hours",
+      "Noise Cancellation": "Dual Processor Pro ANC",
+      "Codecs": "LDAC, LC3, AAC, SBC",
+      "Connectivity": "Bluetooth 5.3 Multipoint",
+      "Weight": "5.9g per earbud"
+    },
+    "best_for": [
+      "Pocketable Premium Sound & ANC",
+      "Daily Metro & Bus Commutes",
+      "Working Out and Gym Sessions",
+      "Crystal Clear Hands-Free Calls"
+    ]
+  },
+  {
+    "id": "audio_06",
+    "name": "Apple AirPods Pro 2 (USB-C)",
+    "brand": "Apple",
+    "category": "headphones",
+    "price": 24900,
+    "rating": 4.9,
+    "rating_count": 14200,
+    "image_url": "https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?auto=format&fit=crop&w=800&q=80",
+    "description": "Groundbreaking H2 chip powers Adaptive Audio, 2x stronger ANC, Conversation Awareness, Hearing Aid features, and MagSafe Case with Precision Finding.",
+    "features": [
+      "Apple H2 headphone chip and low-distortion custom driver",
+      "Adaptive Audio dynamically blending ANC and Transparency based on environment",
+      "Conversation Awareness automatically lowers volume when you speak",
+      "Personalised Spatial Audio with dynamic head tracking",
+      "MagSafe Charging Case (USB-C) with speaker chime and U1 Precision Finding",
+      "Dust, sweat, and water resistant (IP54)"
+    ],
+    "specifications": {
+      "Driver": "Custom high-excursion Apple driver",
+      "Battery Life": "6 hours (earbuds) + 24 hours (case) = 30 hours",
+      "Noise Cancellation": "2x Active Noise Cancellation + Adaptive Audio",
+      "Codecs": "AAC, SBC",
+      "Connectivity": "Bluetooth 5.3",
+      "Weight": "5.3g per earbud"
+    },
+    "best_for": [
+      "iPhone, iPad, and Mac Users",
+      "Everyday Multitasking & Office Use",
+      "Seamless Device Switching",
+      "Fitness and Running"
+    ]
+  },
+  {
+    "id": "audio_07",
+    "name": "Marshall Major IV On-Ear Wireless",
+    "brand": "Marshall",
+    "category": "headphones",
+    "price": 11999,
+    "rating": 4.6,
+    "rating_count": 6800,
+    "image_url": "https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=800&q=80",
+    "description": "Iconic vintage rock-and-roll heritage design with 80+ hours of continuous wireless playtime, multi-directional control knob, and wireless charging support.",
+    "features": [
+      "Custom-tuned 40mm dynamic drivers delivering roaring bass and smooth mids",
+      "80+ continuous hours of wireless playback on a single charge",
+      "Wireless charging compatibility - rest ear cap on any Qi charging pad",
+      "Multi-directional brass control knob for playback and calls",
+      "Rugged textured vinyl exterior and collapsible vintage folding design"
+    ],
+    "specifications": {
+      "Driver": "40mm Dynamic Driver",
+      "Battery Life": "80+ hours",
+      "Noise Cancellation": "Passive Noise Isolation",
+      "Codecs": "SBC",
+      "Connectivity": "Bluetooth 5.0 & 3.5mm Share Jack",
+      "Weight": "165g"
+    },
+    "best_for": [
+      "Rock, Indie & Classic Music Fans",
+      "Retro Fashion & Style Conscious Users",
+      "Zero Battery Anxiety (80+ hours)",
+      "Compact On-the-Go Portability"
+    ]
+  },
+  {
+    "id": "audio_08",
+    "name": "Audio-Technica ATH-M50xBT2",
+    "brand": "Audio-Technica",
+    "category": "headphones",
+    "price": 17990,
+    "rating": 4.8,
+    "rating_count": 9100,
+    "image_url": "https://images.unsplash.com/photo-1524678606370-a47ad25cb82a?auto=format&fit=crop&w=800&q=80",
+    "description": "Legendary studio monitor sound signature converted to wireless with proprietary 45mm large-aperture drivers, dedicated AK4331 DAC, and LDAC support.",
+    "features": [
+      "Proprietary 45mm large-aperture drivers with rare earth magnets",
+      "Dedicated AK4331 audio DAC and internal headphone amplifier",
+      "LDAC codec support for 24-bit/96kHz pure audio resolution",
+      "Up to 50 hours of continuous use on a full charge",
+      "Low Latency Mode for lag-free video streaming and gaming",
+      "Dual microphones with beamforming technology"
+    ],
+    "specifications": {
+      "Driver": "45mm Studio Grade Dynamic Drivers",
+      "Battery Life": "50 hours",
+      "Noise Cancellation": "Professional Passive Sound Isolation",
+      "Codecs": "LDAC, AAC, SBC",
+      "Connectivity": "Bluetooth 5.0 & 3.5mm Studio Cable",
+      "Weight": "307g"
+    },
+    "best_for": [
+      "Music Producers and Sound Engineers",
+      "Neutral Flat Studio Monitoring",
+      "Critical Listening & Mixing",
+      "Professional Voiceover & Podcasts"
+    ]
+  },
+  {
+    "id": "audio_09",
+    "name": "JBL Tour ONE M2",
+    "brand": "JBL",
+    "category": "headphones",
+    "price": 19999,
+    "rating": 4.6,
+    "rating_count": 2300,
+    "image_url": "https://images.unsplash.com/photo-1572536147248-ac59a8abfa4b?auto=format&fit=crop&w=800&q=80",
+    "description": "True Adaptive Noise Cancelling with Smart Ambient, 40mm dynamic drivers tuned with JBL Pro Sound, Spatial Sound, and 50 hours battery life.",
+    "features": [
+      "True Adaptive Noise Cancelling technology with 4 noise sensing mics",
+      "Smart Ambient mode with Personi-Fi 2.0 personalized hearing profile",
+      "JBL Spatial Sound with immersive 3D surround audio",
+      "4-mic crystal clear call technology with voice clarity enhancement",
+      "Up to 50 hours playtime (30 hours with ANC activated)"
+    ],
+    "specifications": {
+      "Driver": "40mm Dynamic Driver",
+      "Battery Life": "50 hours (ANC Off) / 30 hours (ANC On)",
+      "Noise Cancellation": "True Adaptive ANC",
+      "Codecs": "AAC, SBC",
+      "Connectivity": "Bluetooth 5.3 Multipoint & AUX",
+      "Weight": "278g"
+    },
+    "best_for": [
+      "JBL Deep Punchy Bass Lovers",
+      "Office Commuting & Travel",
+      "Smart Volume Auto-adaptation",
+      "High Value ANC under 20k"
+    ]
+  },
+  {
+    "id": "audio_10",
+    "name": "Nothing Ear (2024)",
+    "brand": "Nothing",
+    "category": "headphones",
+    "price": 11999,
+    "rating": 4.7,
+    "rating_count": 4100,
+    "image_url": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=800&q=80",
+    "description": "Audiophile sound in a transparent earbud featuring custom ceramic diaphragm, 45dB Smart Active Noise Cancellation, LDAC & LHDC 5.0, and ChatGPT voice integration.",
+    "features": [
+      "Custom 11mm ceramic driver with 24-bit Hi-Res audio",
+      "Smart ANC up to 45dB with real-time ear canal leakage check",
+      "ChatGPT voice integration directly via pinch controls",
+      "LHDC 5.0 and LDAC high-definition wireless streaming",
+      "Advanced 8-band parametric EQ with profile sharing",
+      "Up to 40.5 hours total playback with wireless charging case"
+    ],
+    "specifications": {
+      "Driver": "11mm Ceramic Diaphragm",
+      "Battery Life": "8.5 hours (earbuds) / 40.5 hours (with case)",
+      "Noise Cancellation": "Smart Adaptive 45dB ANC",
+      "Codecs": "LDAC, LHDC 5.0, AAC, SBC",
+      "Connectivity": "Bluetooth 5.3 Dual Connection",
+      "Weight": "4.62g per earbud"
+    },
+    "best_for": [
+      "Aesthetic Transparent Tech Lovers",
+      "ChatGPT AI Voice Prompting",
+      "Custom Parametric EQ Tuning",
+      "High-Res Audio under 15k"
+    ]
+  },
+  {
+    "id": "audio_11",
+    "name": "OnePlus Buds Pro 3",
+    "brand": "OnePlus",
+    "category": "headphones",
+    "price": 11999,
+    "rating": 4.8,
+    "rating_count": 3500,
+    "image_url": "https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?auto=format&fit=crop&w=800&q=80",
+    "description": "Co-created with Dynaudio featuring dual drivers (11mm woofer + 6mm tweeter), dual DACs, 50dB adaptive noise cancellation, and faux leather case.",
+    "features": [
+      "Dual Driver system with 11mm woofer + 6mm planar tweeter co-tuned by Dynaudio",
+      "Dual DACs dedicated to each driver for zero distortion",
+      "Real-time Adaptive ANC up to 50dB with vocal noise reduction",
+      "LHDC 5.0 Hi-Res Audio certification up to 1Mbps 24-bit/192kHz",
+      "Spatial Audio with head tracking and 43 hours total battery life"
+    ],
+    "specifications": {
+      "Driver": "11mm Woofer + 6mm Planar Tweeter (Dynaudio)",
+      "Battery Life": "10 hours (buds) / 43 hours (case)",
+      "Noise Cancellation": "50dB Adaptive Smart ANC",
+      "Codecs": "LHDC 5.0, AAC, SBC",
+      "Connectivity": "Bluetooth 5.4 Dual Connection",
+      "Weight": "4.7g per earbud"
+    },
+    "best_for": [
+      "Dual Driver Audiophile Acoustic Separation",
+      "Deep Textured Bass and Sparkly Treble",
+      "Android & OnePlus Ecosystem Users",
+      "Premium Leather Look & Feel"
+    ]
+  },
+  {
+    "id": "audio_12",
+    "name": "JBL Live 770NC",
+    "brand": "JBL",
+    "category": "headphones",
+    "price": 12999,
+    "rating": 4.5,
+    "rating_count": 3100,
+    "image_url": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=80",
+    "description": "Comfortable over-ear headphones with True Adaptive Noise Cancelling with Smart Ambient, JBL Signature Sound, and up to 65 hours battery life.",
+    "features": [
+      "40mm dynamic drivers with JBL Signature Sound and punchy bass",
+      "True Adaptive Noise Cancelling with 4 noise-sensing microphones",
+      "Up to 65 hours battery life (50 hours with ANC activated)",
+      "Personi-Fi 2.0 sound customization tool",
+      "Auto Play and Pause sensor when removing headphones"
+    ],
+    "specifications": {
+      "Driver": "40mm Dynamic Driver",
+      "Battery Life": "65 hours (ANC Off) / 50 hours (ANC On)",
+      "Noise Cancellation": "True Adaptive ANC",
+      "Codecs": "AAC, SBC",
+      "Connectivity": "Bluetooth 5.3 Multipoint & AUX",
+      "Weight": "256g"
+    },
+    "best_for": [
+      "Gym & Fitness Over-Ear Use",
+      "Long Battery Life on a Budget",
+      "JBL Bass Heavy Music Genres",
+      "Daily Commuting"
+    ]
+  },
+  {
+    "id": "audio_13",
+    "name": "Anker Soundcore Space Q45",
+    "brand": "Anker Soundcore",
+    "category": "headphones",
+    "price": 9999,
+    "rating": 4.5,
+    "rating_count": 6700,
+    "image_url": "https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=800&q=80",
+    "description": "Best budget ANC headphones under 10k with 98% noise reduction, LDAC Hi-Res wireless audio, 65 hours playtime, and 5 levels of custom transparency.",
+    "features": [
+      "3-Stage adaptive active noise cancellation system reducing up to 98% of noise",
+      "40mm double-layer silk and ceramic diaphragm drivers",
+      "LDAC wireless audio certification for 3x more detail transmission",
+      "65 hours battery life in standard mode / 50 hours in ANC mode",
+      "Custom Soundcore EQ app with 22 presets and custom curve"
+    ],
+    "specifications": {
+      "Driver": "40mm Silk & Ceramic Composite",
+      "Battery Life": "65 hours (ANC Off) / 50 hours (ANC On)",
+      "Noise Cancellation": "3-Stage Adaptive ANC (98% reduction)",
+      "Codecs": "LDAC, AAC, SBC",
+      "Connectivity": "Bluetooth 5.3 Multipoint & AUX",
+      "Weight": "292g"
+    },
+    "best_for": [
+      "Top ANC Value under 10k",
+      "Students & Remote Workers",
+      "Long Study Sessions",
+      "Reliable All-Round Performance"
+    ]
+  },
+  {
+    "id": "audio_14",
+    "name": "Realme Buds Air 6 Pro",
+    "brand": "Realme",
+    "category": "headphones",
+    "price": 4999,
+    "rating": 4.5,
+    "rating_count": 8200,
+    "image_url": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=800&q=80",
+    "description": "Unbeatable value under 5000 with Hi-Fi coaxial dual drivers (11mm + 6mm), 50dB Smart Deep ANC, LDAC support, and 360-degree spatial audio effect.",
+    "features": [
+      "Coaxial Dual Drivers: 11mm bass driver + 6mm micro-planar tweeter",
+      "50dB Smart Active Noise Cancellation with 4000Hz ultra-wide frequency",
+      "LDAC HD audio decoding with Hi-Res Audio certification",
+      "360-degree Spatial Audio effect and 55ms super low latency",
+      "Up to 40 hours total battery life with fast charging"
+    ],
+    "specifications": {
+      "Driver": "11mm Bass + 6mm Planar Dual Drivers",
+      "Battery Life": "10 hours (buds) / 40 hours (case)",
+      "Noise Cancellation": "50dB Smart Active Noise Cancellation",
+      "Codecs": "LDAC, AAC, SBC",
+      "Connectivity": "Bluetooth 5.3 Dual Device",
+      "Weight": "4.5g per earbud"
+    },
+    "best_for": [
+      "Best TWS Earbuds under 5000",
+      "Students & Budget Conscious Audiophiles",
+      "Deep Bass & Clear Vocals",
+      "Mobile Gaming Latency"
+    ]
+  },
+  {
+    "id": "audio_15",
+    "name": "boAt Nirvana 751 ANC",
+    "brand": "boAt",
+    "category": "headphones",
+    "price": 3499,
+    "rating": 4.2,
+    "rating_count": 12000,
+    "image_url": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=80",
+    "description": "Massively popular affordable ANC over-ear headphones with hybrid active noise cancellation up to 33dB, 40mm drivers, and 65 hours total playback.",
+    "features": [
+      "Hybrid Active Noise Cancellation up to 33dB",
+      "40mm dynamic drivers with boAt Signature Sound",
+      "Up to 65 hours battery life (54 hours with ANC on)",
+      "ASAP fast charge: 10 mins charge delivers 10 hours playback",
+      "Ambient sound mode and ergonomic plush memory foam earcups"
+    ],
+    "specifications": {
+      "Driver": "40mm Dynamic Driver",
+      "Battery Life": "65 hours (ANC Off) / 54 hours (ANC On)",
+      "Noise Cancellation": "Hybrid ANC (Up to 33dB)",
+      "Codecs": "AAC, SBC",
+      "Connectivity": "Bluetooth 5.0 & AUX",
+      "Weight": "260g"
+    },
+    "best_for": [
+      "Entry Level ANC under 4000",
+      "Everyday Online Classes & Casual Music",
+      "Bass Boosted Popular Indian Music",
+      "Affordability"
+    ]
+  },
+  {
+    "id": "shoe_01",
+    "name": "Nike Air Zoom Pegasus 41",
+    "brand": "Nike",
+    "category": "shoes",
+    "price": 11895,
+    "rating": 4.8,
+    "rating_count": 5600,
+    "image_url": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
+    "description": "The workhorse with wings. Engineered with responsive ReactX foam that provides 13% more energy return, dual Air Zoom units, and breathable engineered mesh upper.",
+    "features": [
+      "Upgraded ReactX foam midsole for responsive lightweight cushioning",
+      "Dual Air Zoom units in forefoot and heel for bouncy toe-off",
+      "Engineered mesh upper for optimized breathability and lockdown fit",
+      "Signature waffle-inspired rubber outsole for road traction and durability",
+      "Padded collar and tongue for supreme step-in comfort"
+    ],
+    "specifications": {
+      "Surface": "Road / Pavement / Treadmill",
+      "Cushioning": "Responsive / Balanced Cushioning",
+      "Heel-to-Toe Drop": "10mm",
+      "Weight": "297g (Men's US 9)",
+      "Arch Support": "Neutral",
+      "Closure": "Lace-up"
+    },
+    "best_for": [
+      "Daily 5K to 15K Training Runs",
+      "Marathon Base Building",
+      "Beginner to Advanced Road Runners",
+      "All-day Walking and Standing"
+    ]
+  },
+  {
+    "id": "shoe_02",
+    "name": "Asics GEL-Nimbus 26",
+    "brand": "Asics",
+    "category": "shoes",
+    "price": 15999,
+    "rating": 4.9,
+    "rating_count": 4200,
+    "image_url": "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80",
+    "description": "The pinnacle of max-cushion comfort. Features FF BLAST PLUS ECO cushioning, PureGEL technology for cloud-like landings, and soft engineered knit collar.",
+    "features": [
+      "FF BLAST PLUS ECO foam crafted with approx 24% bio-based content",
+      "Rearfoot PureGEL technology provides 65% softer landings than traditional gel",
+      "HYBRID ASICSGRIP outsole combines ASICSGRIP with AHARPLUS rubber for supreme wet grip",
+      "Soft stretchy knit tongue and collar for easy step-in and plush ankle wrap",
+      "Ortholite X-55 sockliner for enhanced moisture management"
+    ],
+    "specifications": {
+      "Surface": "Road / Long Distance",
+      "Cushioning": "Max Cushioning / Cloud Soft",
+      "Heel-to-Toe Drop": "8mm",
+      "Weight": "304g",
+      "Arch Support": "Neutral / Underpronation",
+      "Closure": "Lace-up"
+    },
+    "best_for": [
+      "Half Marathon & Full Marathon Long Runs",
+      "Joint & Knee Protection (Soft Impact)",
+      "Heavy Runners looking for Maximum Cushion",
+      "Recovery Easy Runs"
+    ]
+  },
+  {
+    "id": "shoe_03",
+    "name": "Brooks Ghost 16",
+    "brand": "Brooks",
+    "category": "shoes",
+    "price": 12999,
+    "rating": 4.8,
+    "rating_count": 6800,
+    "image_url": "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80",
+    "description": "Runner's World award winner for ultimate reliability. Nitrogen-infused DNA LOFT v3 cushioning delivers lightweight, plush transitions mile after mile.",
+    "features": [
+      "Nitrogen-infused DNA LOFT v3 foam midsole for lightweight soft bounce",
+      "Segmented Crash Pad absorbs shock and ensures smooth heel-to-toe roll",
+      "Engineered air mesh upper balances breathability and structured foot security",
+      "Durable RoadTack rubber made with recycled silica",
+      "Certified Carbon Neutral athletic shoe"
+    ],
+    "specifications": {
+      "Surface": "Road / Asphalt",
+      "Cushioning": "Soft & Smooth Cushioning",
+      "Heel-to-Toe Drop": "12mm",
+      "Weight": "269g",
+      "Arch Support": "Neutral / High Arch",
+      "Closure": "Lace-up"
+    },
+    "best_for": [
+      "Everyday Consistent Running",
+      "High Mileage Durability (500+ miles)",
+      "High Heel Drop Preference (Calf Relief)",
+      "Daily Fitness Walkers"
+    ]
+  },
+  {
+    "id": "shoe_04",
+    "name": "Adidas Ultraboost Light",
+    "brand": "Adidas",
+    "category": "shoes",
+    "price": 14999,
+    "rating": 4.7,
+    "rating_count": 9100,
+    "image_url": "https://images.unsplash.com/photo-1587563871167-1ee9c731aefb?auto=format&fit=crop&w=800&q=80",
+    "description": "Experience epic energy return with Light BOOST - 30% lighter than standard Boost. Continental rubber outsole provides exceptional grip in wet and dry conditions.",
+    "features": [
+      "Light BOOST midsole technology delivering high kinetic energy return",
+      "Linear Energy Push (LEP) system integrated for responsive toe propulsion",
+      "PRIMEKNIT+ textile upper that hugs the foot like a custom sock",
+      "Continental Better Rubber outsole providing superior wet-weather grip",
+      "10% lower carbon footprint than previous editions"
+    ],
+    "specifications": {
+      "Surface": "Road / Urban / Casual Gym",
+      "Cushioning": "High Bouncy Energy Return",
+      "Heel-to-Toe Drop": "10mm",
+      "Weight": "299g",
+      "Arch Support": "Neutral",
+      "Closure": "Lace-up"
+    },
+    "best_for": [
+      "Stylish Running & Sneakerheads",
+      "Gym & HIIT Workouts",
+      "All-day Standing Shift Workers (Doctors, Retail)",
+      "Urban 5K-10K Runs"
+    ]
+  },
+  {
+    "id": "shoe_05",
+    "name": "Hoka Clifton 9",
+    "brand": "Hoka",
+    "category": "shoes",
+    "price": 13999,
+    "rating": 4.8,
+    "rating_count": 7300,
+    "image_url": "https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=800&q=80",
+    "description": "Lightweight max cushioning icon. Eliminates weight while adding 3mm in stack height with responsive new EVA foam and early stage MetaRocker.",
+    "features": [
+      "Compression-molded EVA foam midsole for signature plush Hoka comfort",
+      "Early stage Meta-Rocker geometry accelerates forward transition",
+      "Breathable engineered knit upper with plush gusseted tongue",
+      "Durabrasion rubber outsole placed strategically in high-wear zones",
+      "Accepted by the American Podiatric Medical Association (APMA) for foot health"
+    ],
+    "specifications": {
+      "Surface": "Road / Pavement",
+      "Cushioning": "Plush Balanced Max Cushion",
+      "Heel-to-Toe Drop": "5mm",
+      "Weight": "248g (Extremely light)",
+      "Arch Support": "Neutral / Plantar Fasciitis Friendly",
+      "Closure": "Lace-up"
+    },
+    "best_for": [
+      "Plantar Fasciitis & Foot Pain Relief",
+      "Super Lightweight Long Runs",
+      "Smooth Rockered Motion Preference",
+      "Hospital & Nurse All-Day Wear"
+    ]
+  },
+  {
+    "id": "shoe_06",
+    "name": "Puma Velocity Nitro 3",
+    "brand": "Puma",
+    "category": "shoes",
+    "price": 7999,
+    "rating": 4.7,
+    "rating_count": 3100,
+    "image_url": "https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=800&q=80",
+    "description": "The best value daily trainer in running. Combines nitrogen-infused NITROFOAM for bouncy responsiveness with industry-leading PUMAGRIP rubber traction under 8k.",
+    "features": [
+      "NITROFOAM nitrogen-injected midsole foam providing high energy return and cushioning",
+      "PUMAGRIP all-surface rubber outsole with unmatched grip on wet roads",
+      "PWRTAPE targeted upper reinforcement for support and durability",
+      "Engineered mesh upper with reflective accents for night visibility",
+      "TPU heel spoiler for stability and clean aesthetics"
+    ],
+    "specifications": {
+      "Surface": "Road / Wet Pavements / Light Gravel",
+      "Cushioning": "Responsive Nitrogen Bouncy",
+      "Heel-to-Toe Drop": "10mm",
+      "Weight": "264g",
+      "Arch Support": "Neutral",
+      "Closure": "Lace-up"
+    },
+    "best_for": [
+      "Best Running Shoes Under ₹8,000",
+      "Monsoon & Wet Road Grip",
+      "Tempo Runs & Daily Training",
+      "Beginner to Intermediate Runners"
+    ]
+  },
+  {
+    "id": "shoe_07",
+    "name": "Saucony Endorphin Speed 4",
+    "brand": "Saucony",
+    "category": "shoes",
+    "price": 16990,
+    "rating": 4.9,
+    "rating_count": 3800,
+    "image_url": "https://images.unsplash.com/photo-1514989940723-e8e51635b782?auto=format&fit=crop&w=800&q=80",
+    "description": "The do-it-all super trainer. Features a winged nylon plate, PWRRUN PB peba superfoam, and SPEEDROLL technology for effortless race-pace speed.",
+    "features": [
+      "PWRRUN PB superfoam cushioning for explosive energy return",
+      "Winged nylon plate for torsional rigidity and snappy propulsive toe-off",
+      "SPEEDROLL technology propels you forward with effortless momentum",
+      "Zonal engineered mesh upper for race-day breathability and lockdown",
+      "Lattice outsole design for lightweight traction"
+    ],
+    "specifications": {
+      "Surface": "Road / Track / Race Day",
+      "Cushioning": "Propulsive Superfoam with Nylon Plate",
+      "Heel-to-Toe Drop": "8mm",
+      "Weight": "233g",
+      "Arch Support": "Neutral / Fast Pace",
+      "Closure": "Lace-up"
+    },
+    "best_for": [
+      "Speed Work, Intervals & Tempo Runs",
+      "Half Marathon & 10K Personal Bests",
+      "Super Trainer Longevity",
+      "Fast Marathon Racing"
+    ]
+  },
+  {
+    "id": "shoe_08",
+    "name": "Nike Revolution 7",
+    "brand": "Nike",
+    "category": "shoes",
+    "price": 3695,
+    "rating": 4.4,
+    "rating_count": 14000,
+    "image_url": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
+    "description": "Budget-friendly entry running shoe with soft foam cushioning, padded touchpoints at the heel, and generative traction pattern outsole.",
+    "features": [
+      "Soft foam midsole delivering smooth cushioned ride for beginners",
+      "Puffs on heel collar for touchpoint comfort around achilles tendon",
+      "Generative traction pattern lugs on rubber outsole",
+      "Lightweight knit mesh upper for everyday cooling"
+    ],
+    "specifications": {
+      "Surface": "Road / Gym / Daily Walking",
+      "Cushioning": "Moderate Soft Foam",
+      "Heel-to-Toe Drop": "10mm",
+      "Weight": "280g",
+      "Arch Support": "Neutral",
+      "Closure": "Lace-up"
+    },
+    "best_for": [
+      "Beginner Runners under ₹4,000",
+      "Morning Walks and Treadmill",
+      "Casual Gym Goers",
+      "High Value Budget Shoe"
+    ]
+  },
+  {
+    "id": "shoe_09",
+    "name": "Asics Novablast 4",
+    "brand": "Asics",
+    "category": "shoes",
+    "price": 13999,
+    "rating": 4.9,
+    "rating_count": 5100,
+    "image_url": "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80",
+    "description": "Trampoline-inspired geometric geometry with FF BLAST PLUS ECO foam delivers an energetic, joyful, bouncy ride for daily mileage.",
+    "features": [
+      "FF BLAST PLUS ECO cushioning creates a bouncy trampoline spring-like rebound",
+      "Geometric wing tongue construction reduces slippage and improves midfoot lockdown",
+      "AHAR low-density rubber outsole for high durability and bounce",
+      "Engineered woven upper for stretch, airflow, and comfort"
+    ],
+    "specifications": {
+      "Surface": "Road / Concrete",
+      "Cushioning": "High Bouncy / Energetic",
+      "Heel-to-Toe Drop": "8mm",
+      "Weight": "260g",
+      "Arch Support": "Neutral",
+      "Closure": "Lace-up"
+    },
+    "best_for": [
+      "Fun Energetic Daily Runs",
+      "Upbeat Tempo and Long Training Runs",
+      "Midfoot to Forefoot Strikers",
+      "High Energy Return"
+    ]
+  },
+  {
+    "id": "shoe_10",
+    "name": "Nike Vaporfly 3",
+    "brand": "Nike",
+    "category": "shoes",
+    "price": 20695,
+    "rating": 4.9,
+    "rating_count": 2100,
+    "image_url": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
+    "description": "The ultimate marathon racing shoe. Full-length Flyplate carbon fiber plate paired with Nike ZoomX peba superfoam for record-breaking speed.",
+    "features": [
+      "Full-length carbon fiber Flyplate creates a rigid and propulsive feeling",
+      "Nike ZoomX foam provides our highest energy return yet with convex geometry",
+      "Flyknit engineered yarns for featherlight breathable race lockdown",
+      "Waffle thin rubber outsole designed for marathon race day grip"
+    ],
+    "specifications": {
+      "Surface": "Road Racing / Marathon / 10K",
+      "Cushioning": "Max Carbon-Plated Superfoam",
+      "Heel-to-Toe Drop": "8mm",
+      "Weight": "198g (Ultra-featherlight)",
+      "Arch Support": "Neutral Race Stance",
+      "Closure": "Lace-up"
+    },
+    "best_for": [
+      "Official Marathon & Half-Marathon Races",
+      "Setting Personal Records (PR / PB)",
+      "Elite & Fast Road Racers",
+      "Maximum Speed Efficiency"
+    ]
+  },
+  {
+    "id": "shoe_11",
+    "name": "Asics GT-2000 12",
+    "brand": "Asics",
+    "category": "shoes",
+    "price": 11999,
+    "rating": 4.7,
+    "rating_count": 3900,
+    "image_url": "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80",
+    "description": "Versatile stability trainer designed with 3D GUIDANCE SYSTEM for smooth pronation guidance, FF BLAST PLUS foam, and PureGEL heel cushioning.",
+    "features": [
+      "3D GUIDANCE SYSTEM provides adaptive on-demand overpronation stability",
+      "FF BLAST PLUS cushioning provides lightweight shock absorption",
+      "Rearfoot PureGEL technology for soft impact landings",
+      "Jacquard mesh upper keeps feet cool and securely locked in"
+    ],
+    "specifications": {
+      "Surface": "Road / Pavement",
+      "Cushioning": "Stable & Balanced Cushioning",
+      "Heel-to-Toe Drop": "8mm",
+      "Weight": "270g",
+      "Arch Support": "Stability / Overpronation / Flat Feet",
+      "Closure": "Lace-up"
+    },
+    "best_for": [
+      "Overpronators & Flat Feet Runners",
+      "Knee and Inward Ankle Roll Prevention",
+      "Reliable Daily Stability Mileage",
+      "Long Distance Comfort"
+    ]
+  },
+  {
+    "id": "shoe_12",
+    "name": "New Balance Fresh Foam X 1080v13",
+    "brand": "New Balance",
+    "category": "shoes",
+    "price": 14999,
+    "rating": 4.8,
+    "rating_count": 4600,
+    "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?auto=format&fit=crop&w=800&q=80",
+    "description": "The king of plush softness. Fresh Foam X midsole technology with fine-tuned mapping delivers seamless transition from landing to push-off.",
+    "features": [
+      "Fresh Foam X midsole foam with bio-based content for maximum plushness",
+      "Engineered mesh upper feels like a second skin with structured midfoot support",
+      "Rocker profile for smoother and more natural transitions",
+      "Solid rubber outsole provides forefoot stiffness for push-off"
+    ],
+    "specifications": {
+      "Surface": "Road / Treadmill",
+      "Cushioning": "Ultra Soft Plush Max Cushion",
+      "Heel-to-Toe Drop": "6mm",
+      "Weight": "262g",
+      "Arch Support": "Neutral",
+      "Closure": "Lace-up"
+    },
+    "best_for": [
+      "Plush Pillow-soft Walking & Running",
+      "Joint Pain and Sore Knee Relief",
+      "Daily High Mileage Comfort",
+      "Long Shifts on Hard Floors"
+    ]
+  },
+  {
+    "id": "shoe_13",
+    "name": "Puma Deviate Nitro 2",
+    "brand": "Puma",
+    "category": "shoes",
+    "price": 13999,
+    "rating": 4.8,
+    "rating_count": 2800,
+    "image_url": "https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=800&q=80",
+    "description": "Carbon-composite plated performance trainer featuring dual-density NITRO Elite peba superfoam and carbon INNOPLATE for snappy speed.",
+    "features": [
+      "Dual-layer NITRO Elite peba foam for maximum energy bounce",
+      "INNOPLATE carbon composite plate acting as a propulsive lever",
+      "PUMAGRIP high-traction rubber outsole for all-weather grip",
+      "PWRTAPE targeted upper reinforcement for high-speed stability"
+    ],
+    "specifications": {
+      "Surface": "Road / Track",
+      "Cushioning": "Carbon Plated Superfoam",
+      "Heel-to-Toe Drop": "6mm",
+      "Weight": "257g",
+      "Arch Support": "Neutral",
+      "Closure": "Lace-up"
+    },
+    "best_for": [
+      "Affordable Carbon Plated Speed Trainer",
+      "Tempo Runs, 10Ks and Half Marathons",
+      "Bouncy Dynamic Transitions",
+      "All-Weather Road Racing"
+    ]
+  },
+  {
+    "id": "shoe_14",
+    "name": "Decathlon Kalenji Run 100",
+    "brand": "Kalenji",
+    "category": "shoes",
+    "price": 1499,
+    "rating": 4.3,
+    "rating_count": 22000,
+    "image_url": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
+    "description": "Ultra-affordable, featherlight entry running and walking shoes designed with EVA foam sole to absorb shock waves for beginner runners.",
+    "features": [
+      "EVA foam sole providing gentle shock absorption on flat surfaces",
+      "Featherlight design at only 180g (Size 8)",
+      "Breathable mesh upper keeps feet ventilated during warm weather runs",
+      "Flexible sole grooves allowing natural foot articulation"
+    ],
+    "specifications": {
+      "Surface": "Road / Park / Treadmill",
+      "Cushioning": "Entry Level EVA Cushion",
+      "Heel-to-Toe Drop": "10mm",
+      "Weight": "180g",
+      "Arch Support": "Neutral",
+      "Closure": "Lace-up"
+    },
+    "best_for": [
+      "Ultra-budget Entry Shoe under ₹2,000",
+      "Casual Morning Walks & 2K-5K Jogging",
+      "Daily Errands and Lightweight Travel",
+      "Beginner Runners"
+    ]
+  },
+  {
+    "id": "shoe_15",
+    "name": "Salomon Speedcross 6 Trail",
+    "brand": "Salomon",
+    "category": "shoes",
+    "price": 12999,
+    "rating": 4.8,
+    "rating_count": 3700,
+    "image_url": "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80",
+    "description": "Legendary trail running monster. Deep 5mm chevron Mud Contagrip lugs shed mud effortlessly while Quicklace system provides instant lockdown on rocky trails.",
+    "features": [
+      "Mud Contagrip outsole with aggressive chevron lug pattern for extreme muddy and loose terrain grip",
+      "Sensifit construction cradles the foot from midsole to lacing system",
+      "EnergyCell+ high-rebound midsole compound provides exceptional energy return",
+      "Quicklace minimalist one-pull tightening Kevlar lacing system with lace pocket",
+      "Anti-debris tight mesh preventing dirt and stones from entering"
+    ],
+    "specifications": {
+      "Surface": "Trail / Mud / Mountains / Rocks / Loose Dirt",
+      "Cushioning": "Moderate Protective Trail Cushion",
+      "Heel-to-Toe Drop": "10mm",
+      "Weight": "298g",
+      "Arch Support": "Neutral / Trail Stability",
+      "Closure": "Quicklace"
+    },
+    "best_for": [
+      "Trail Running & Mountain Hiking",
+      "Muddy, Loose, Wet Rocky Terrains",
+      "Grip and Foot Protection",
+      "Obstacle Course & Adventure Races"
+    ]
+  }
+]
