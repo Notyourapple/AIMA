@@ -10,6 +10,7 @@ logger = logging.getLogger(__name__)
 class LLMService:
     def __init__(self):
         self._openai_client = None
+        self._quota_exhausted = False
         self._init_client()
 
     def _init_client(self):
@@ -21,11 +22,13 @@ class LLMService:
             except Exception as e:
                 logger.warning(f"Could not initialize OpenAI LLM: {e}. Fallback intent extractor enabled.")
                 self._openai_client = None
+        else:
+            logger.info("No OpenAI API key provided. Using built-in semantic vectorizer.")
 
     def extract_intent(self, message: str, history: List[Dict[str, str]], last_products: List[RecommendedProduct]) -> UserIntent:
         """Extracts structured intent from user message and past conversation context."""
         # 1. Try OpenAI structured extraction if available
-        if self._openai_client:
+        if self._openai_client and not self._quota_exhausted:
             try:
                 system_prompt = (
                     "You are an expert AI e-commerce shopping agent. Analyze the user's message in the context of recent chat history.\n"
@@ -55,7 +58,12 @@ class LLMService:
                 data = json.loads(response.choices[0].message.content)
                 return UserIntent(**data)
             except Exception as e:
-                logger.error(f"OpenAI intent extraction error: {e}. Using deterministic regex parser.")
+                err_str = str(e).lower()
+                if "quota" in err_str or "429" in err_str:
+                    self._quota_exhausted = True
+                    logger.warning("OpenAI LLM quota exceeded. Switching to deterministic regex parser.")
+                else:
+                    logger.error(f"OpenAI intent extraction error: {e}. Using deterministic regex parser.")
 
         # 2. Resilient Rule-based / Regex NLP intent extractor
         return self._extract_intent_fallback(message, history, last_products)
@@ -217,7 +225,7 @@ class LLMService:
     ) -> str:
         """Generates a natural, intelligent conversational response."""
         # 1. Use OpenAI GPT-4o-mini if configured
-        if self._openai_client and products:
+        if self._openai_client and not self._quota_exhausted and products:
             try:
                 prod_context = []
                 for idx, rp in enumerate(products, 1):
@@ -259,7 +267,12 @@ class LLMService:
                 )
                 return response.choices[0].message.content.strip()
             except Exception as e:
-                logger.error(f"OpenAI response generation error: {e}. Falling back to template generation.")
+                err_str = str(e).lower()
+                if "quota" in err_str or "429" in err_str:
+                    self._quota_exhausted = True
+                    logger.warning("OpenAI chat quota exceeded. Switching to deterministic conversational synthesizer.")
+                else:
+                    logger.error(f"OpenAI response generation error: {e}. Falling back to template generation.")
 
         # 2. Resilient Fallback generator
         return self._generate_fallback_response(message, intent, products)

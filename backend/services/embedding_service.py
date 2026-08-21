@@ -10,6 +10,7 @@ class EmbeddingService:
     def __init__(self):
         self._cache: Dict[str, List[float]] = {}
         self._openai_client = None
+        self._quota_exhausted = False
         self._init_client()
 
     def _init_client(self):
@@ -33,7 +34,7 @@ class EmbeddingService:
         if cleaned_text in self._cache:
             return self._cache[cleaned_text]
 
-        if self._openai_client:
+        if self._openai_client and not self._quota_exhausted:
             try:
                 response = self._openai_client.embeddings.create(
                     input=cleaned_text,
@@ -43,7 +44,12 @@ class EmbeddingService:
                 self._cache[cleaned_text] = vector
                 return vector
             except Exception as e:
-                logger.error(f"OpenAI embedding error: {e}. Falling back to local semantic vectorizer.")
+                err_str = str(e).lower()
+                if "quota" in err_str or "429" in err_str:
+                    self._quota_exhausted = True
+                    logger.warning("OpenAI embedding quota exceeded. Switching to high-speed local semantic vectorizer.")
+                else:
+                    logger.error(f"OpenAI embedding error: {e}. Falling back to local semantic vectorizer.")
 
         # Fallback local semantic vectorizer
         vector = self._generate_local_embedding(cleaned_text)
@@ -58,7 +64,7 @@ class EmbeddingService:
         # If OpenAI is available, do batch API call for uncached
         uncached_indices = [i for i, t in enumerate(texts) if t.strip() not in self._cache]
         
-        if self._openai_client and uncached_indices:
+        if self._openai_client and not self._quota_exhausted and uncached_indices:
             try:
                 uncached_texts = [texts[i].strip() for i in uncached_indices]
                 response = self._openai_client.embeddings.create(
@@ -68,7 +74,12 @@ class EmbeddingService:
                 for idx, data_item in zip(uncached_indices, response.data):
                     self._cache[texts[idx].strip()] = data_item.embedding
             except Exception as e:
-                logger.error(f"OpenAI batch embedding error: {e}. Falling back to local embeddings.")
+                err_str = str(e).lower()
+                if "quota" in err_str or "429" in err_str:
+                    self._quota_exhausted = True
+                    logger.warning("OpenAI batch embedding quota exceeded. Switching to local embeddings.")
+                else:
+                    logger.error(f"OpenAI batch embedding error: {e}. Falling back to local embeddings.")
                 for i in uncached_indices:
                     t = texts[i].strip()
                     self._cache[t] = self._generate_local_embedding(t)

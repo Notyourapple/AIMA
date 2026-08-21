@@ -13,16 +13,16 @@ class Settings(BaseSettings):
     APP_VERSION: str = "1.0.0"
     ENVIRONMENT: str = "development"
     DEBUG: bool = True
-    PORT: int = 8000
+    PORT: int = int(os.getenv("PORT", "8000"))
     HOST: str = "0.0.0.0"
     
-    # CORS
+    # CORS & Frontend Origins
+    FRONTEND_URL: str = os.getenv("FRONTEND_URL", "")
     CORS_ORIGINS: list[str] = [
         "http://localhost:3000",
         "http://127.0.0.1:3000",
         "http://localhost:3001",
         "http://127.0.0.1:3001",
-        "*"
     ]
     
     # OpenAI Settings

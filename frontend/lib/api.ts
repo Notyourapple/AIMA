@@ -1,6 +1,6 @@
 import { ChatRequest, ChatResponse, Product, SimilarProduct } from '@/types';
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+export const API_BASE_URL = (process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000').replace(/\/+$/, '');
 
 class ApiClient {
   private baseUrl: string;
@@ -34,16 +34,19 @@ class ApiClient {
     query?: string;
     limit?: number;
   }): Promise<Product[]> {
-    const url = new URL(`${this.baseUrl}/api/products`);
+    const searchParams = new URLSearchParams();
     if (params) {
       Object.entries(params).forEach(([key, value]) => {
         if (value !== undefined && value !== null && value !== '') {
-          url.searchParams.append(key, String(value));
+          searchParams.append(key, String(value));
         }
       });
     }
 
-    const response = await fetch(url.toString(), {
+    const queryString = searchParams.toString();
+    const endpoint = `${this.baseUrl}/api/products${queryString ? `?${queryString}` : ''}`;
+
+    const response = await fetch(endpoint, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -58,7 +61,7 @@ class ApiClient {
   }
 
   async getProductById(productId: string): Promise<Product> {
-    const response = await fetch(`${this.baseUrl}/api/products/${productId}`, {
+    const response = await fetch(`${this.baseUrl}/api/products/${encodeURIComponent(productId)}`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -73,12 +76,15 @@ class ApiClient {
   }
 
   async getSimilarProducts(productId: string, limit: number = 4): Promise<SimilarProduct[]> {
-    const response = await fetch(`${this.baseUrl}/api/products/${productId}/similar?limit=${limit}`, {
-      method: 'GET',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    });
+    const response = await fetch(
+      `${this.baseUrl}/api/products/${encodeURIComponent(productId)}/similar?limit=${limit}`,
+      {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      }
+    );
 
     if (!response.ok) {
       throw new Error(`Failed to fetch similar products: ${response.statusText}`);
@@ -88,7 +94,12 @@ class ApiClient {
   }
 
   async checkHealth(): Promise<{ status: string; total_products: number; pinecone_connected: boolean }> {
-    const response = await fetch(`${this.baseUrl}/api/health`);
+    const response = await fetch(`${this.baseUrl}/api/health`, {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
     if (!response.ok) {
       throw new Error('API is offline');
     }

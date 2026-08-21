@@ -1,3 +1,4 @@
+import os
 import sys
 import logging
 from pathlib import Path
@@ -39,9 +40,30 @@ app = FastAPI(
 )
 
 # CORS Configuration
+allowed_origins = [
+    "http://localhost:3000",
+    "http://127.0.0.1:3000",
+    "http://localhost:3001",
+    "http://127.0.0.1:3001",
+]
+
+# Include FRONTEND_URL if provided
+frontend_url_env = os.getenv("FRONTEND_URL", "") or settings.FRONTEND_URL
+if frontend_url_env:
+    for url in frontend_url_env.split(","):
+        clean_url = url.strip().rstrip("/")
+        if clean_url and clean_url not in allowed_origins:
+            allowed_origins.append(clean_url)
+
+for origin in settings.CORS_ORIGINS:
+    clean_origin = origin.strip().rstrip("/")
+    if clean_origin and clean_origin not in allowed_origins:
+        allowed_origins.append(clean_origin)
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=settings.CORS_ORIGINS,
+    allow_origins=allowed_origins if "*" not in allowed_origins else ["*"],
+    allow_origin_regex=r"^https?://.*",
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -72,4 +94,5 @@ def root_endpoint():
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run("backend.main:app", host=settings.HOST, port=settings.PORT, reload=True)
+    port = int(os.getenv("PORT", str(settings.PORT)))
+    uvicorn.run("backend.main:app", host=settings.HOST, port=port, reload=settings.DEBUG)
