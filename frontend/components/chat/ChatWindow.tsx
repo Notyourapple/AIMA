@@ -69,7 +69,7 @@ export function ChatWindow({ initialPrompt }: ChatWindowProps) {
       const errorMessage: ChatMessageType = {
         id: 'msg_err_' + Date.now().toString(36),
         role: 'assistant',
-        content: 'Unable to connect to the AI service. The service may be temporarily unavailable. Please try again in a moment.',
+        content: 'Unable to connect to the AI service. Please try again in a moment.',
         timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
       };
       addMessage(errorMessage);

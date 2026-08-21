@@ -1,6 +1,27 @@
 import { ChatRequest, ChatResponse, Product, SimilarProduct } from '@/types';
 
-export const API_BASE_URL = (process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000').replace(/\/+$/, '');
+/**
+ * Resolves the API Base URL cleanly for all environments:
+ * 1. NEXT_PUBLIC_API_URL environment variable (if provided)
+ * 2. Development mode fallback -> http://localhost:8000
+ * 3. Production mode fallback -> https://aima-thu5.onrender.com (Render backend)
+ * 
+ * This guarantees deployed frontend builds NEVER default to localhost:8000.
+ */
+const getBaseUrl = (): string => {
+  if (process.env.NEXT_PUBLIC_API_URL) {
+    return process.env.NEXT_PUBLIC_API_URL.replace(/\/+$/, '');
+  }
+
+  if (process.env.NODE_ENV === 'development') {
+    return 'http://localhost:8000';
+  }
+
+  // Production fallback to live Render service
+  return 'https://aima-thu5.onrender.com';
+};
+
+export const API_BASE_URL = getBaseUrl();
 
 class ApiClient {
   private baseUrl: string;
