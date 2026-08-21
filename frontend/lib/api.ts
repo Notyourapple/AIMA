@@ -1,4 +1,4 @@
-import { ChatRequest, ChatResponse, Product, SimilarProduct } from '@/types';
+import { ChatRequest, ChatResponse, Product, SimilarProduct, AIProviderInfo } from '@/types';
 
 /**
  * Resolves the API Base URL cleanly for all environments:
@@ -45,6 +45,46 @@ class ApiClient {
     }
 
     return response.json();
+  }
+
+  async getProviders(): Promise<{ providers: AIProviderInfo[]; default_provider: string }> {
+    try {
+      const response = await fetch(`${this.baseUrl}/api/providers`, {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
+
+      if (!response.ok) {
+        throw new Error(`Failed to fetch AI providers: ${response.statusText}`);
+      }
+
+      return response.json();
+    } catch (err) {
+      console.warn('Could not fetch dynamic providers from backend, using safe defaults:', err);
+      return {
+        providers: [
+          {
+            id: 'openai',
+            name: 'OpenAI',
+            model: 'gpt-4o-mini',
+            available: true,
+            description: 'OpenAI Cloud API (GPT-4o-mini)',
+            is_default: true,
+          },
+          {
+            id: 'ollama',
+            name: 'Local AI',
+            model: 'qwen2.5:3b',
+            available: true,
+            description: 'Local AI (Qwen 2.5 3B via Ollama)',
+            is_default: false,
+          },
+        ],
+        default_provider: 'openai',
+      };
+    }
   }
 
   async getProducts(params?: {
@@ -114,7 +154,7 @@ class ApiClient {
     return response.json();
   }
 
-  async checkHealth(): Promise<{ status: string; total_products: number; pinecone_connected: boolean }> {
+  async checkHealth(): Promise<{ status: string; total_products: number; pinecone_connected: boolean; services?: any }> {
     const response = await fetch(`${this.baseUrl}/api/health`, {
       method: 'GET',
       headers: {

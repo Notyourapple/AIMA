@@ -2,7 +2,7 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Sparkles, Brain, Search, ShieldCheck, Zap, Laptop, Smartphone, Headphones, Footprints } from 'lucide-react';
+import { Sparkles, Brain, Search, ShieldCheck, Zap } from 'lucide-react';
 import { useAppStore } from '@/lib/store';
 import { api } from '@/lib/api';
 import { ChatMessage as ChatMessageType } from '@/types';
@@ -15,7 +15,13 @@ interface ChatWindowProps {
 }
 
 export function ChatWindow({ initialPrompt }: ChatWindowProps) {
-  const { messages, addMessage, activeConversationId } = useAppStore();
+  const {
+    messages,
+    addMessage,
+    activeConversationId,
+    selectedProvider,
+    setAvailableProviders,
+  } = useAppStore();
   const [isLoading, setIsLoading] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
@@ -26,6 +32,21 @@ export function ChatWindow({ initialPrompt }: ChatWindowProps) {
   useEffect(() => {
     scrollToBottom();
   }, [messages, isLoading]);
+
+  // Fetch AI providers status on mount
+  useEffect(() => {
+    async function loadProviders() {
+      try {
+        const data = await api.getProviders();
+        if (data && data.providers) {
+          setAvailableProviders(data.providers);
+        }
+      } catch (e) {
+        console.error('Failed to load AI providers:', e);
+      }
+    }
+    loadProviders();
+  }, []);
 
   // If initialPrompt passed, send it automatically
   useEffect(() => {
@@ -51,6 +72,7 @@ export function ChatWindow({ initialPrompt }: ChatWindowProps) {
       const response = await api.sendChatMessage({
         message: text,
         conversation_id: activeConversationId,
+        provider: selectedProvider,
       });
 
       const assistantMessage: ChatMessageType = {
@@ -60,6 +82,7 @@ export function ChatWindow({ initialPrompt }: ChatWindowProps) {
         products: response.products,
         intent: response.intent,
         suggested_followups: response.suggested_followups,
+        provider_used: response.provider_used || selectedProvider,
         timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
       };
 
@@ -70,6 +93,7 @@ export function ChatWindow({ initialPrompt }: ChatWindowProps) {
         id: 'msg_err_' + Date.now().toString(36),
         role: 'assistant',
         content: 'Unable to connect to the AI service. Please try again in a moment.',
+        provider_used: selectedProvider,
         timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
       };
       addMessage(errorMessage);
@@ -103,7 +127,7 @@ export function ChatWindow({ initialPrompt }: ChatWindowProps) {
                 How can I assist your shopping today?
               </h2>
               <p className="text-sm text-slate-400 max-w-md mx-auto leading-relaxed">
-                Describe your requirements, preferred features, or budget in natural language. I'll search our Pinecone vector database and formulate personalized recommendations.
+                Describe your requirements, preferred features, or budget in natural language. Choose between <strong>OpenAI</strong> or <strong>Local AI (Qwen 2.5 3B)</strong> for smart shopping recommendations.
               </p>
             </div>
 
@@ -111,8 +135,8 @@ export function ChatWindow({ initialPrompt }: ChatWindowProps) {
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 w-full text-left pt-2">
               <div className="p-3.5 rounded-xl bg-white/[0.02] border border-white/5 space-y-1">
                 <Brain className="w-4 h-4 text-indigo-400" />
-                <h4 className="text-xs font-semibold text-slate-200">Semantic Search</h4>
-                <p className="text-[11px] text-slate-500">Understands intent, not just raw keywords</p>
+                <h4 className="text-xs font-semibold text-slate-200">Dual AI Intelligence</h4>
+                <p className="text-[11px] text-slate-500">Switch between OpenAI & Local Qwen 2.5 3B</p>
               </div>
               <div className="p-3.5 rounded-xl bg-white/[0.02] border border-white/5 space-y-1">
                 <Zap className="w-4 h-4 text-sky-400" />

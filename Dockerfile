@@ -1,17 +1,33 @@
-# Python FastAPI Backend Container
+# Python FastAPI + Ollama Container for Render / Production
 FROM python:3.11-slim
 
 WORKDIR /app
 
-# Install dependencies
+# Install system dependencies (curl for Ollama installer & health checks)
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    curl \
+    ca-certificates \
+    procps \
+    && rm -rf /var/lib/apt/lists/*
+
+# Install Ollama binary
+RUN curl -fsSL https://ollama.com/install.sh | sh
+
+# Install Python backend dependencies
 COPY backend/requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy source code and data
+# Copy dataset and backend codebase
 COPY data/ ./data/
 COPY backend/ ./backend/
 
+# Make startup script executable
+RUN chmod +x /app/backend/start.sh
+
 ENV PORT=8000
+ENV OLLAMA_HOST=http://127.0.0.1:11434
+ENV OLLAMA_MODEL=qwen2.5:3b
+
 EXPOSE 8000
 
-CMD ["sh", "-c", "uvicorn backend.main:app --host 0.0.0.0 --port ${PORT:-8000}"]
+CMD ["/app/backend/start.sh"]

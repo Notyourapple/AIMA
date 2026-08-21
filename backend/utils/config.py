@@ -10,7 +10,7 @@ DATA_DIR = PROJECT_ROOT / "data"
 class Settings(BaseSettings):
     # App Settings
     APP_NAME: str = "AI Marketplace Assistant API"
-    APP_VERSION: str = "1.0.0"
+    APP_VERSION: str = "1.1.0"
     ENVIRONMENT: str = "development"
     DEBUG: bool = True
     PORT: int = int(os.getenv("PORT", "8000"))
@@ -25,11 +25,20 @@ class Settings(BaseSettings):
         "http://127.0.0.1:3001",
     ]
     
+    # AI Provider Defaults
+    DEFAULT_AI_PROVIDER: str = "openai"  # "openai" or "ollama"
+    
     # OpenAI Settings
     OPENAI_API_KEY: str = ""
     OPENAI_MODEL: str = "gpt-4o-mini"
     OPENAI_EMBEDDING_MODEL: str = "text-embedding-3-small"
     EMBEDDING_DIMENSION: int = 1536
+    
+    # Ollama Local Settings
+    OLLAMA_ENABLED: bool = True
+    OLLAMA_HOST: str = os.getenv("OLLAMA_HOST", "http://localhost:11434")
+    OLLAMA_MODEL: str = os.getenv("OLLAMA_MODEL", "qwen2.5:3b")
+    OLLAMA_TIMEOUT_SECONDS: float = 45.0
     
     # Pinecone Settings
     PINECONE_API_KEY: str = ""

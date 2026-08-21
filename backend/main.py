@@ -17,6 +17,7 @@ from backend.utils.config import settings
 from backend.api.chat import router as chat_router
 from backend.api.products import router as products_router
 from backend.vector.pinecone_client import vector_store
+from backend.services.ai.provider_factory import provider_factory
 
 # Configure Logging
 logging.basicConfig(
@@ -29,13 +30,15 @@ logger = logging.getLogger(__name__)
 async def lifespan(app: FastAPI):
     logger.info(f"Starting {settings.APP_NAME} v{settings.APP_VERSION}")
     logger.info(f"Vector engine ready with {len(vector_store.get_all_products())} products loaded.")
+    providers = provider_factory.list_providers()
+    logger.info(f"Registered AI providers: {', '.join([f'{p.name} (available={p.available})' for p in providers])}")
     yield
     logger.info("Shutting down AI Marketplace Assistant API...")
 
 app = FastAPI(
     title=settings.APP_NAME,
     version=settings.APP_VERSION,
-    description="Autonomous Conversational Shopping Agent & Vector Recommendation Engine API",
+    description="Autonomous Conversational Shopping Agent & Multi-Provider Vector Recommendation Engine API",
     lifespan=lifespan
 )
 
@@ -73,14 +76,31 @@ app.add_middleware(
 app.include_router(chat_router)
 app.include_router(products_router)
 
+@app.get("/api/providers", tags=["AI Providers"])
+def get_providers_endpoint():
+    """Retrieve all available AI providers (OpenAI, Local Ollama) and their availability."""
+    return {
+        "providers": [p.dict() for p in provider_factory.list_providers()],
+        "default_provider": settings.DEFAULT_AI_PROVIDER
+    }
+
 @app.get("/api/health", tags=["Health"])
 def health_check():
+    """Detailed health check for all core services and AI providers."""
+    ai_health = provider_factory.get_provider_health()
     return {
         "status": "healthy",
         "app": settings.APP_NAME,
         "version": settings.APP_VERSION,
         "environment": settings.ENVIRONMENT,
-        "pinecone_connected": vector_store.use_pinecone,
+        "services": {
+            "api": True,
+            "ollama": ai_health["ollama_available"],
+            "ollama_model": ai_health["ollama_model"],
+            "pinecone": vector_store.use_pinecone,
+            "openai_configured": ai_health["openai_configured"],
+            "openai_available": ai_health["openai_available"]
+        },
         "total_products": len(vector_store.get_all_products())
     }
 
@@ -89,7 +109,8 @@ def root_endpoint():
     return {
         "message": "AI Marketplace Assistant API is online.",
         "documentation": "/docs",
-        "health": "/api/health"
+        "health": "/api/health",
+        "providers": "/api/providers"
     }
 
 if __name__ == "__main__":

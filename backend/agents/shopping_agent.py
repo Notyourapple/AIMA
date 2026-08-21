@@ -3,7 +3,7 @@ import logging
 from typing import Dict, Any, List, Optional
 from backend.models.chat import ChatRequest, ChatResponse, UserIntent, RecommendedProduct
 from backend.agents.memory import memory_manager
-from backend.services.llm_service import llm_service
+from backend.services.ai.provider_factory import provider_factory
 from backend.services.embedding_service import embedding_service
 from backend.services.recommendation_service import recommendation_service
 from backend.vector.pinecone_client import vector_store
@@ -15,32 +15,31 @@ class ShoppingAgent:
         conversation_id = request.conversation_id or str(uuid.uuid4())
         session = memory_manager.get_or_create_session(conversation_id)
 
-        # 1. Add incoming user message to session
+        # 1. Resolve selected AI provider
+        ai_provider = provider_factory.get_provider(request.provider)
+        logger.info(f"Processing chat request for session '{conversation_id}' with AI provider: {ai_provider.name} ({ai_provider.model_name})")
+
+        # 2. Add incoming user message to session
         session.add_user_message(request.message)
         history = session.get_history_summary(max_messages=6)
 
-        # 2. Extract structured shopping intent
-        intent = llm_service.extract_intent(
+        # 3. Extract structured shopping intent via selected provider
+        intent = ai_provider.extract_intent(
             message=request.message,
             history=history,
             last_products=session.last_recommended_products
         )
         session.last_intent = intent
 
-        # 3. Handle comparison or follow-up on existing recommendations
+        # 4. Handle comparison or follow-up on existing recommendations
         if intent.comparison_requested and session.last_recommended_products:
-            # Rerank or focus on existing products with query context
-            candidates = [
-                {"id": rp.product.id, "score": float(rp.match_score) / 100.0, "metadata": {}}
-                for rp in session.last_recommended_products
-            ]
             ranked_products = session.last_recommended_products
         else:
-            # 4. Generate dense embedding query
+            # 5. Generate dense embedding query
             query_text = self._build_semantic_query(request.message, intent)
             query_vector = embedding_service.get_embedding(query_text)
 
-            # 5. Query Vector Database (Pinecone / In-memory) with price range filters
+            # 6. Query Vector Database (Pinecone / In-memory) with price range filters
             candidates = vector_store.query_vectors(
                 query_vector=query_vector,
                 top_k=10,
@@ -50,7 +49,7 @@ class ShoppingAgent:
                 target_price=intent.target_price
             )
 
-            # 6. Apply Hybrid Multi-Factor Recommendation Ranking
+            # 7. Apply Hybrid Multi-Factor Recommendation Ranking
             all_products_map = {p.id: p for p in vector_store.get_all_products()}
             ranked_products = recommendation_service.rank_products(
                 candidates=candidates,
@@ -59,18 +58,18 @@ class ShoppingAgent:
                 limit=4
             )
 
-        # 7. Generate contextual natural language response
-        response_text = llm_service.generate_conversational_response(
+        # 8. Generate contextual natural language response via selected provider
+        response_text = ai_provider.generate_response(
             message=request.message,
             intent=intent,
             products=ranked_products,
             history=history
         )
 
-        # 8. Generate dynamic suggested follow-ups
+        # 9. Generate dynamic suggested follow-ups
         suggested_followups = self._generate_suggested_followups(intent, ranked_products)
 
-        # 9. Save assistant response to session memory
+        # 10. Save assistant response to session memory
         session.add_assistant_message(response_text, ranked_products)
 
         return ChatResponse(
@@ -78,7 +77,8 @@ class ShoppingAgent:
             response=response_text,
             products=ranked_products,
             intent=intent,
-            suggested_followups=suggested_followups
+            suggested_followups=suggested_followups,
+            provider_used=ai_provider.id
         )
 
     def _build_semantic_query(self, user_msg: str, intent: UserIntent) -> str:

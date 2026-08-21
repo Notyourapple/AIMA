@@ -68,9 +68,9 @@ class PineconeVectorStore:
                 product = Product(**item)
                 self._products_map[product.id] = product
 
-                # Construct rich document representation for vector embeddings
+                # Construct rich document representation for in-memory vector store (local deterministic)
                 doc_text = self.format_product_for_embedding(product)
-                vector = embedding_service.get_embedding(doc_text)
+                vector = embedding_service._generate_local_embedding(doc_text)
                 
                 self._memory_vectors[product.id] = {
                     "id": product.id,

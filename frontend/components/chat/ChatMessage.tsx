@@ -148,7 +148,17 @@ export function ChatMessage({ message, onSelectPrompt }: ChatMessageProps) {
           </div>
         )}
 
-        <div className="text-[10px] text-slate-500 px-1">{message.timestamp}</div>
+        <div className="flex items-center justify-between text-[10px] text-slate-500 px-1 pt-1">
+          <span>{message.timestamp}</span>
+          <div className="flex items-center gap-1.5 font-mono text-[10px] text-slate-400">
+            <span className={`w-1.5 h-1.5 rounded-full ${message.provider_used === 'ollama' ? 'bg-purple-400' : 'bg-emerald-400'}`} />
+            <span>
+              {message.provider_used === 'ollama'
+                ? 'Powered by Local AI · Qwen 2.5 3B'
+                : 'Powered by OpenAI'}
+            </span>
+          </div>
+        </div>
       </div>
     </motion.div>
   );

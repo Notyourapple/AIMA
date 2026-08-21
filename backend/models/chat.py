@@ -24,6 +24,7 @@ class RecommendedProduct(BaseModel):
 class ChatRequest(BaseModel):
     message: str = Field(..., min_length=1, description="User's natural language shopping query or follow-up")
     conversation_id: Optional[str] = Field(default=None, description="Unique conversation session UUID")
+    provider: Optional[str] = Field(default="openai", description="Selected AI provider: 'openai' or 'ollama'")
 
 class ChatResponse(BaseModel):
     conversation_id: str
@@ -31,9 +32,19 @@ class ChatResponse(BaseModel):
     products: List[RecommendedProduct] = []
     intent: Optional[UserIntent] = None
     suggested_followups: List[str] = []
+    provider_used: Optional[str] = Field(default="openai", description="ID of the AI provider that generated this response")
 
 class MessageHistoryItem(BaseModel):
-    role: str # "user" or "assistant"
+    role: str  # "user" or "assistant"
     content: str
     products: Optional[List[Dict[str, Any]]] = None
     timestamp: Optional[str] = None
+    provider_used: Optional[str] = None
+
+class AIProviderInfo(BaseModel):
+    id: str
+    name: str
+    model: str
+    available: bool
+    description: str
+    is_default: bool = False

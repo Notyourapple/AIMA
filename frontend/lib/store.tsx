@@ -1,7 +1,7 @@
 'use client';
 
 import React, { createContext, useContext, useState, useEffect } from 'react';
-import { Product, ChatMessage, ConversationHistoryItem } from '@/types';
+import { Product, ChatMessage, ConversationHistoryItem, AIProviderInfo } from '@/types';
 
 interface AppContextType {
   savedProducts: Product[];
@@ -9,6 +9,12 @@ interface AppContextType {
   isProductSaved: (productId: string) => boolean;
   clearSavedProducts: () => void;
   
+  // AI Provider State
+  selectedProvider: string; // 'openai' | 'ollama'
+  setSelectedProvider: (provider: string) => void;
+  availableProviders: AIProviderInfo[];
+  setAvailableProviders: (providers: AIProviderInfo[]) => void;
+
   // Chat state
   activeConversationId: string;
   setActiveConversationId: (id: string) => void;
@@ -27,6 +33,27 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
   const [activeConversationId, setActiveConversationId] = useState<string>('session-default');
   const [conversations, setConversations] = useState<ConversationHistoryItem[]>([]);
   const [messages, setMessages] = useState<ChatMessage[]>([]);
+  
+  // AI Provider state
+  const [selectedProvider, setSelectedProviderState] = useState<string>('openai');
+  const [availableProviders, setAvailableProviders] = useState<AIProviderInfo[]>([
+    {
+      id: 'openai',
+      name: 'OpenAI',
+      model: 'gpt-4o-mini',
+      available: true,
+      description: 'OpenAI Cloud API (GPT-4o-mini)',
+      is_default: true,
+    },
+    {
+      id: 'ollama',
+      name: 'Local AI',
+      model: 'qwen2.5:3b',
+      available: true,
+      description: 'Local AI (Qwen 2.5 3B via Ollama)',
+      is_default: false,
+    },
+  ]);
 
   // Load from localStorage on mount
   useEffect(() => {
@@ -36,6 +63,9 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
 
       const storedConvs = localStorage.getItem('aima_conversations');
       if (storedConvs) setConversations(JSON.parse(storedConvs));
+
+      const storedProvider = localStorage.getItem('aima_selected_provider');
+      if (storedProvider) setSelectedProviderState(storedProvider);
     } catch (e) {
       console.error('Error reading localStorage:', e);
     }
@@ -49,6 +79,15 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
       console.error('Error saving to localStorage:', e);
     }
   }, [savedProducts]);
+
+  const setSelectedProvider = (provider: string) => {
+    setSelectedProviderState(provider);
+    try {
+      localStorage.setItem('aima_selected_provider', provider);
+    } catch (e) {
+      console.error('Error saving provider to localStorage:', e);
+    }
+  };
 
   const toggleSaveProduct = (product: Product) => {
     setSavedProducts((prev) => {
@@ -114,6 +153,10 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
         toggleSaveProduct,
         isProductSaved,
         clearSavedProducts,
+        selectedProvider,
+        setSelectedProvider,
+        availableProviders,
+        setAvailableProviders,
         activeConversationId,
         setActiveConversationId,
         conversations,

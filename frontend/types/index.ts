@@ -44,6 +44,7 @@ export interface UserIntent {
 export interface ChatRequest {
   message: string;
   conversation_id?: string;
+  provider?: string; // 'openai' | 'ollama'
 }
 
 export interface ChatResponse {
@@ -52,6 +53,7 @@ export interface ChatResponse {
   products: RecommendedProduct[];
   intent?: UserIntent;
   suggested_followups: string[];
+  provider_used?: string;
 }
 
 export interface ChatMessage {
@@ -62,6 +64,7 @@ export interface ChatMessage {
   intent?: UserIntent;
   suggested_followups?: string[];
   timestamp: string;
+  provider_used?: string;
 }
 
 export interface SimilarProduct {
@@ -75,4 +78,13 @@ export interface ConversationHistoryItem {
   title: string;
   created_at: string;
   message_count: number;
+}
+
+export interface AIProviderInfo {
+  id: string;
+  name: string;
+  model: string;
+  available: boolean;
+  description: string;
+  is_default?: boolean;
 }

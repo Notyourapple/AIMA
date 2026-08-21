@@ -68,8 +68,11 @@ def get_similar_products(
     if not target_product:
         raise HTTPException(status_code=404, detail=f"Product with ID '{product_id}' not found.")
 
-    doc_text = vector_store.format_product_for_embedding(target_product)
-    target_vector = embedding_service.get_embedding(doc_text)
+    if product_id in vector_store._memory_vectors:
+        target_vector = vector_store._memory_vectors[product_id]["values"]
+    else:
+        doc_text = vector_store.format_product_for_embedding(target_product)
+        target_vector = embedding_service.get_embedding(doc_text)
 
     # Query vector store for candidates
     candidates = vector_store.query_vectors(
