@@ -5,7 +5,7 @@ echo "=================================================="
 echo "🚀 Starting AI Marketplace Assistant (AIMA)..."
 echo "=================================================="
 
-OLLAMA_HOST_URL="${OLLAMA_HOST:-http://localhost:11434}"
+OLLAMA_HOST_URL="${OLLAMA_HOST:-http://127.0.0.1:11434}"
 OLLAMA_MODEL_NAME="${OLLAMA_MODEL:-qwen2.5:3b}"
 APP_PORT="${PORT:-8000}"
 

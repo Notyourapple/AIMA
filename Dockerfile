@@ -3,11 +3,12 @@ FROM python:3.11-slim
 
 WORKDIR /app
 
-# Install system dependencies (curl for Ollama installer & health checks)
-RUN apt-get update && apt-get install -y --no-install-recommends \
+# Install system dependencies (curl and zstd required for Ollama installer & runtime)
+RUN apt-get update && apt-get install -y \
     curl \
-    ca-certificates \
+    zstd \
     procps \
+    ca-certificates \
     && rm -rf /var/lib/apt/lists/*
 
 # Install Ollama binary
